@@ -30,3 +30,4 @@ tempdat<-merge(landings, trips, by=mergecol)
 # table(trips$trip_id) # why are some trip_IDs not unique? 
 tempdat[tempdat$trip_id=="1 11 ACER + DULETES",]
 tempdat[tempdat$Fish_name_p=="Kumai",]
+# TESTING HOW QUICK IT PUSHES
