@@ -29,3 +29,9 @@ tempdat<-merge(landings, trips, by=mergecol)
 # table(trips$trip_id) # why are some trip_IDs not unique? 
 tempdat[tempdat$trip_id=="1 11 ACER + DULETES",]
 
+# Convert trip time to single standardized unit (USE: HOURS)
+table(tempdat$Trip_time_unit) # levels = day, days, hour, hours
+tempdat$Trip_time_unit[grep("day", tempdat$Trip_time_unit)]<-"d"
+tempdat$Trip_time_unit[grep("hour", tempdat$Trip_time_unit)]<-"h"
+tempdat$Trip_time_hours<-tempdat$Trip_time_no
+tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_time_hours*24, Trip_time_hours))
