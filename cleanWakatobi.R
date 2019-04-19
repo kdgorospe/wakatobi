@@ -47,5 +47,5 @@ kelvin = "kelly's dad"
 
 
 kelvin<-strsplit(kelvin, " ")
-kelvin[[1]][grep("dad", kelvin)]<-"friend"
+kelvin[[1]][grep("dad", kelvin)]<-"cool dude"
 
