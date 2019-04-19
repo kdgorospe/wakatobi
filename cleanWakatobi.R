@@ -35,10 +35,6 @@ tempdat$Trip_time_unit[grep("day", tempdat$Trip_time_unit)]<-"d"
 tempdat$Trip_time_unit[grep("hour", tempdat$Trip_time_unit)]<-"h"
 tempdat$Trip_time_hours<-tempdat$Trip_time_no
 tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_time_hours*24, Trip_time_hours))
-<<<<<<< HEAD
-# Paul's doing all of this data cleaning for us
-=======
 
-# paul's comment
-kelvin = "kelly's dad"
->>>>>>> d4efe68bcf54db80b317281fa06b5a835be2bdf5
+
+
