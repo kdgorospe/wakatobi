@@ -35,7 +35,7 @@ tempdat$Trip_time_unit[grep("day", tempdat$Trip_time_unit)]<-"d"
 tempdat$Trip_time_unit[grep("hour", tempdat$Trip_time_unit)]<-"h"
 tempdat$Trip_time_hours<-tempdat$Trip_time_no
 tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_time_hours*24, Trip_time_hours))
-
+# PRACTICE EDITING DIFFERENT SECTIONS OF THE CODE
 
 
 ## Kelly is my favorite lab mascot - Lauren 
