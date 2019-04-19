@@ -37,4 +37,6 @@ tempdat$Trip_time_hours<-tempdat$Trip_time_no
 tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_time_hours*24, Trip_time_hours))
 
 
+kelvin<-strsplit(kelvin, " ")
+kelvin[[1]][grep("dad", kelvin)]<-"friend"
 
