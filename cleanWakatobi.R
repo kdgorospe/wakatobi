@@ -39,3 +39,8 @@ tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_tim
 
 
 ## Kelly is my favorite lab mascot - Lauren 
+
+# Paul's doing all of this data cleaning for us
+
+# paul's comment
+kelvin = "kelly's dad"
