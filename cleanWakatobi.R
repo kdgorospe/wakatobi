@@ -24,7 +24,27 @@ drive_download(as_id("1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC"), overwrite=TRUE)
 trips<-read.csv("Wakatobi-landings_041119_TRIP.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
 
 
+# Clean fish names in landings data frame using Paul's checkspelling.R script           
+# Output table of current fish names for comparison
+write.csv(as.data.frame(table(landings$Fish_name_p)), file="table_rawData_FishNames.csv", quote=FALSE)
+write.csv(as.data.frame(table(landings$Bajau_genus)), file="table_rawData_BajauGenus.csv", quote=FALSE)
+write.csv(as.data.frame(table(landings$Bajau_spp_p1)), file="table_rawData_BajauSpp1.csv", quote=FALSE)
+write.csv(as.data.frame(table(landings$Bajau_spp_p2)), file="table_rawData_BajauSpp2.csv", quote=FALSE)
+# Column: Fish_name_p has the most number of categories; Clean this column only and create the other columns (Genus, Spp1, Spp2 based on this)
 
+
+# NEXT: Run landings$Fish_name_p through check.spelling function:
+# Select spelling with capitalized first letter as the "correct" spelling
+source("wakatobi/check_spelling.R")
+cleandist1<-check.spelling(df_in = landings, var_name = Fish_name_p, distance_sensitivity = 1)
+# write.csv(cleandist1, file="data_landings_041119_FISH_checkspelling_dist1_.csv", quote=FALSE, row.names=FALSE)
+
+# Cleaning notes fo Melati (DO NOT DELETE):
+# Waiting for Melati to respond with most updated species names list
+
+
+
+### Attempt to merge landings and trips
 dim(landings)
 dim(trips)
 
