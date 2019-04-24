@@ -35,14 +35,41 @@ write.csv(as.data.frame(table(landings$Bajau_spp_p2)), file="table_rawData_Bajau
 
 # NEXT: Run landings$Fish_name_p through check.spelling function:
 # Select spelling with capitalized first letter as the "correct" spelling
+# Use key.csv for correct spellings 
+# If still unsure, use table_rawData_FishNames.csv to choose more common spelling
 source("wakatobi/check_spelling.R")
+# First try distance_sensitivity=1
 cleandist1<-check.spelling(df_in = landings, var_name = Fish_name_p, distance_sensitivity = 1)
-# write.csv(cleandist1, file="data_landings_041119_FISH_checkspelling_dist1_.csv", quote=FALSE, row.names=FALSE)
+write.csv(cleandist1, file="data_landings_041119_FISH_checkspelling_dist1_.csv", quote=FALSE, row.names=FALSE)
+cleandist1a<-check.spelling(df_in = cleandist1, var_name = Fish_name_p, distance_sensitivity = 1)
+write.csv(cleandist1a, file="data_landings_041119_FISH_checkspelling_dist1a_.csv", quote=FALSE, row.names=FALSE)
+# Now try distance_sensitivity = 2
+cleandist2<-check.spelling(df_in = cleandist1a, var_name = Fish_name_p, distance_sensitivity = 2)
+write.csv(cleandist2, file="data_landings_041119_FISH_checkspelling_dist2_.csv", quote=FALSE, row.names=FALSE)
+cleandist2a<-check.spelling(df_in = cleandist2, var_name = Fish_name_p, distance_sensitivity = 2)
+write.csv(cleandist2a, file="data_landings_041119_FISH_checkspelling_dist2a_.csv", quote=FALSE, row.names=FALSE)
+cleandist2b<-check.spelling(df_in = cleandist2a, var_name = Fish_name_p, distance_sensitivity = 2)
+write.csv(cleandist2b, file="data_landings_041119_FISH_checkspelling_dist2b_.csv", quote=FALSE, row.names=FALSE)
 
 # Cleaning notes fo Melati (DO NOT DELETE):
-# Waiting for Melati to respond with most updated species names list
 
+# dist=1
+# Chose "Banguntu" (more common) over "Baguntu"
+# Keapu Coklat over Keapu Cokelat
+# Keapu Loong Ngaluhu over Keapu Loong Nyaluhu
+# Luppe over Kuppe
+# Mangilala over Mangialo and Mangilalo
 
+# dist=2
+# Kept both Bukalang and Bulealang (labeled as "Unknown" in key.csv)
+# Kept both Dodoh Batu and Mogoh Batu
+# Keapu Bitte Mira over Keapu Bitti Mirah
+# Kept Keapu Nyarengelah, Keapu Nyarengluh, Keapu Nyarengkeh
+# Kept Keapu Goas and Keapu Garas
+# Mogo Nyulloh over Mogoh Nyuluh
+# Kept Mogoh Birrah, Mogoh Borra, and Mogoh Birro
+# Kept both Taburoh and Taboh (labeled as "Unknown" in key.csv)
+# Kept both Tatape Buna and Tatape Bulan
 
 ### Attempt to merge landings and trips
 dim(landings)
