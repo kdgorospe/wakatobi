@@ -48,8 +48,6 @@ cleandist2<-check.spelling(df_in = cleandist1a, var_name = Fish_name_p, distance
 write.csv(cleandist2, file="data_landings_041119_FISH_checkspelling_dist2_.csv", quote=FALSE, row.names=FALSE)
 cleandist2a<-check.spelling(df_in = cleandist2, var_name = Fish_name_p, distance_sensitivity = 2)
 write.csv(cleandist2a, file="data_landings_041119_FISH_checkspelling_dist2a_.csv", quote=FALSE, row.names=FALSE)
-cleandist2b<-check.spelling(df_in = cleandist2a, var_name = Fish_name_p, distance_sensitivity = 2)
-write.csv(cleandist2b, file="data_landings_041119_FISH_checkspelling_dist2b_.csv", quote=FALSE, row.names=FALSE)
 
 # Cleaning notes fo Melati (DO NOT DELETE):
 
