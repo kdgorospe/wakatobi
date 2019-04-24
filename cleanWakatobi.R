@@ -3,7 +3,7 @@
 
 
 ### STEP ONE: set your preferred working directory using setwd() in console
-### setwd("~/Analyses")
+### setwd("~/Analyses/wakatobi")
 
 rm(list=ls())
 library(googledrive)
