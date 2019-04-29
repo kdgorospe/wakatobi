@@ -95,4 +95,7 @@ tempdat$Trip_time_unit[grep("hour", tempdat$Trip_time_unit)]<-"h"
 tempdat$Trip_time_hours<-tempdat$Trip_time_no
 tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_time_hours*24, Trip_time_hours))
 
-
+## Just an UPDATE and GITHUB TEST
+## Turns out my box/basket to fish conversion from past data cleaning
+## Did not include weight - it was just 1 box = 520 fish individuals
+## We'll need to get some estimate of how many kg 1 fish represented from Melati
