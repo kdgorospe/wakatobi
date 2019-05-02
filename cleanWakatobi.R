@@ -69,12 +69,12 @@ source("wakatobi/check_spelling.R")
 #Kept both Taburoh and Taboh (labeled as "Unknown" in key.csv)
 #Kept both Tatape Buna and Tatape Bulan
 
-cleandist1<-read.csv("data_landings_041119_FISH_checkspelling_dist1.csv")
-write.csv(as.data.frame(table(cleandist1$Fish_name_p)), "table_cleandist1_FishNames.csv")
-cleandist1a<-read.csv("data_landings_041119_FISH_checkspelling_dist1a.csv")
-write.csv(as.data.frame(table(cleandist1a$Fish_name_p)), "table_cleandist1a_FishNames.csv")
-cleandist2<-read.csv("data_landings_041119_FISH_checkspelling_dist2.csv")
-write.csv(as.data.frame(table(cleandist2$Fish_name_p)), "table_cleandist2_FishNames.csv")
+#cleandist1<-read.csv("data_landings_041119_FISH_checkspelling_dist1.csv")
+#write.csv(as.data.frame(table(cleandist1$Fish_name_p)), "table_cleandist1_FishNames.csv")
+#cleandist1a<-read.csv("data_landings_041119_FISH_checkspelling_dist1a.csv")
+#write.csv(as.data.frame(table(cleandist1a$Fish_name_p)), "table_cleandist1a_FishNames.csv")
+#cleandist2<-read.csv("data_landings_041119_FISH_checkspelling_dist2.csv")
+#write.csv(as.data.frame(table(cleandist2$Fish_name_p)), "table_cleandist2_FishNames.csv")
 cleandist2a<-read.csv("data_landings_041119_FISH_checkspelling_dist2a.csv")
 write.csv(as.data.frame(table(cleandist2a$Fish_name_p)), "table_cleandist2a_FishNames.csv")
 
