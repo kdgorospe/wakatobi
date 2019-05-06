@@ -95,7 +95,17 @@ tempdat$Trip_time_unit[grep("hour", tempdat$Trip_time_unit)]<-"h"
 tempdat$Trip_time_hours<-tempdat$Trip_time_no
 tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_time_hours*24, Trip_time_hours))
 
-## Just an UPDATE and GITHUB TEST
-## Turns out my box/basket to fish conversion from past data cleaning
-## Did not include weight - it was just 1 box = 520 fish individuals
-## We'll need to get some estimate of how many kg 1 fish represented from Melati - LJ
+### Convert landings units (boxes,baskets, ekor) to individual fish units
+tempdat$landing_unit[tempdat$landing_unit == "smal box"] <- "small box"
+tempdat$landing_unit[tempdat$landing_unit == "box kecil"] <- "small box"
+tempdat$landing_unit[tempdat$landing_unit == "ekor"] <- "fish"
+tempdat$landing_unit[tempdat$landing_unit == "bucket kecil"] <- "small bucket"
+as.numeric(tempdat$landing_no)
+tempdat$landing_unit_fish <- "NA"
+tempdat$landing_unit_convert <- "NA"
+tempdat$landing_unit_convert[tempdat$landing_unit == "basket"] <- 60
+tempdat$landing_unit_convert[tempdat$landing_unit == "box"] <- 520
+tempdat$landing_unit_convert[tempdat$landing_unit == "bucket"] <- 100
+tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- 1
+#Need to know from Melati # of fish in a 'small box' and a 'small bucket'
+#Then multiply landing_no by landing_unit_convert to get all landing totals in units of fish individuals (landing_unit_fish)
