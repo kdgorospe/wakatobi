@@ -100,8 +100,10 @@ tempdat$landing_unit[tempdat$landing_unit == "smal box"] <- "small box"
 tempdat$landing_unit[tempdat$landing_unit == "box kecil"] <- "small box"
 tempdat$landing_unit[tempdat$landing_unit == "ekor"] <- "fish"
 tempdat$landing_unit[tempdat$landing_unit == "bucket kecil"] <- "small bucket"
-as.numeric(tempdat$landing_no)
+tempdat$landing_no <- as.numeric(tempdat$landing_no)
+# Create empty column for the conversion calculation
 tempdat$landing_unit_fish <- "NA"
+# Create empty column for the conversion metric
 tempdat$landing_unit_convert <- "NA"
 tempdat$landing_unit_convert[tempdat$landing_unit == "basket"] <- 60
 tempdat$landing_unit_convert[tempdat$landing_unit == "box"] <- 520
@@ -109,3 +111,68 @@ tempdat$landing_unit_convert[tempdat$landing_unit == "bucket"] <- 100
 tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- 1
 #Need to know from Melati # of fish in a 'small box' and a 'small bucket'
 #Then multiply landing_no by landing_unit_convert to get all landing totals in units of fish individuals (landing_unit_fish)
+
+### Convert landings flow units to individual fish units and check for 100% fish flow reported
+# LEARNING OPPORTUNITY for Lauren:: what is a more efficient way to make these substitutions for all relevant landings columns?
+# As of now, I do them one at a time
+
+#tempdat$landings_flow_convert <- "NA"
+#drop <- c("landings_flow_convert")
+#tempdat <- tempdat[ , !(names(tempdat) %in% drop)]
+tempdat$landings_sold_personally_convert <- "NA"
+tempdat$landings_sold_personally_unit[tempdat$landings_sold_personally_unit == "smal box"] <- "small box"
+tempdat$landings_sold_personally_unit[tempdat$landings_sold_personally_unit == "box kecil"] <- "small box"
+tempdat$landings_sold_personally_unit[tempdat$landings_sold_personally_unit == "ekor"] <- "fish"
+tempdat$landings_sold_personally_unit[tempdat$landings_sold_personally_unit == "bucket kecil"] <- "small bucket"
+tempdat$landings_sold_personally_no <- as.numeric(tempdat$landings_sold_personally_no)
+tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "basket"] <- 60
+tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "box"] <- 520
+tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "bucket"] <- 100
+tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "fish"] <- 1
+
+tempdat$landings_sold_Papalele_convert <- "NA"
+tempdat$landings_sold_Papalele_unit[tempdat$landings_sold_Papalele_unit == "smal box"] <- "small box"
+tempdat$landings_sold_Papalele_unit[tempdat$landings_sold_Papalele_unit == "box kecil"] <- "small box"
+tempdat$landings_sold_Papalele_unit[tempdat$landings_sold_Papalele_unit == "ekor"] <- "fish"
+tempdat$landings_sold_Papalele_unit[tempdat$landings_sold_Papalele_unit == "bucket kecil"] <- "small bucket"
+tempdat$landings_sold_Papalele_no <- as.numeric(tempdat$landings_sold_Papalele_no)
+tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "basket"] <- 60
+tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "box"] <- 520
+tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "bucket"] <- 100
+tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "fish"] <- 1
+
+tempdat$landings_sold_Pengumpul_convert <- "NA"
+tempdat$landings_sold_Pengumpul_unit[tempdat$landings_sold_Pengumpul_unit == "smal box"] <- "small box"
+tempdat$landings_sold_Pengumpul_unit[tempdat$landings_sold_Pengumpul_unit == "box kecil"] <- "small box"
+tempdat$landings_sold_Pengumpul_unit[tempdat$landings_sold_Pengumpul_unit == "ekor"] <- "fish"
+tempdat$landings_sold_Pengumpul_unit[tempdat$landings_sold_Pengumpul_unit == "bucket kecil"] <- "small bucket"
+tempdat$landings_sold_Pengumpul_no <- as.numeric(tempdat$landings_sold_Pengumpul_no)
+tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "basket"] <- 60
+tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "box"] <- 520
+tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "bucket"] <- 100
+tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "fish"] <- 1
+
+tempdat$landings_eaten_convert <- "NA"
+tempdat$landings_eaten_unit[tempdat$landings_eaten_unit == "smal box"] <- "small box"
+tempdat$landings_eaten_unit[tempdat$landings_eaten_unit == "box kecil"] <- "small box"
+tempdat$landings_eaten_unit[tempdat$landings_eaten_unit == "ekor"] <- "fish"
+tempdat$landings_eaten_unit[tempdat$landings_eaten_unit == "bucket kecil"] <- "small bucket"
+tempdat$landings_eaten_no <- as.numeric(tempdat$landings_eaten_no)
+tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "basket"] <- 60
+tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "box"] <- 520
+tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "bucket"] <- 100
+tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "fish"] <- 1
+
+tempdat$landings_given_convert <- "NA"
+tempdat$landings_given_unit[tempdat$landings_given_unit == "smal box"] <- "small box"
+tempdat$landings_given_unit[tempdat$landings_given_unit == "box kecil"] <- "small box"
+tempdat$landings_given_unit[tempdat$landings_given_unit == "ekor"] <- "fish"
+tempdat$landings_given_unit[tempdat$landings_given_unit == "bucket kecil"] <- "small bucket"
+tempdat$landings_given_no <- as.numeric(tempdat$landings_given_no)
+tempdat$landings_given_convert[tempdat$landings_given_unit == "basket"] <- 60
+tempdat$landings_given_convert[tempdat$landings_given_unit == "box"] <- 520
+tempdat$landings_given_convert[tempdat$landings_given_unit == "bucket"] <- 100
+tempdat$landings_given_convert[tempdat$landings_given_unit == "fish"] <- 1
+
+# Will need to add in more conversion values when we get them from Melati
+# Next: check that landings flow columns add up to total landings for each trip (100% flow reported)
