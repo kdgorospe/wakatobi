@@ -103,12 +103,14 @@ tempdat$landing_unit[tempdat$landing_unit == "bucket kecil"] <- "small bucket"
 tempdat$landing_no <- as.numeric(tempdat$landing_no)
 # Create empty column for the conversion calculation
 tempdat$landing_unit_fish <- "NA"
-# Create empty column for the conversion metric
+# Create empty column for the conversion to kilograms (see calibration table from Melati)
 tempdat$landing_unit_convert <- "NA"
-tempdat$landing_unit_convert[tempdat$landing_unit == "basket"] <- 60
-tempdat$landing_unit_convert[tempdat$landing_unit == "box"] <- 520
-tempdat$landing_unit_convert[tempdat$landing_unit == "bucket"] <- 100
-tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- 1
+tempdat$landing_unit_convert[tempdat$landing_unit == "box"] <- 58 
+tempdat$landing_unit_convert[tempdat$landing_unit == "basket"] <- 16
+tempdat$landing_unit_convert[tempdat$landing_unit == "small box"] <- 19
+tempdat$landing_unit_convert[tempdat$landing_unit == "bucket"] <- 14
+tempdat$landing_unit_convert[tempdat$landing_unit == "small bucket"] <- NA # conversion not included in calibration table. Need to ask Melati
+tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- NA # All other conversions are in kilograms. Need to use length-weight conversion to calculate kg when "fish" is the landing unit
 #Need to know from Melati # of fish in a 'small box' and a 'small bucket'
 #Then multiply landing_no by landing_unit_convert to get all landing totals in units of fish individuals (landing_unit_fish)
 
