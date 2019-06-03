@@ -8,7 +8,6 @@
 rm(list=ls())
 library(googledrive)
 
-
 ### GET DATA AND CREATE SUMMARY TABLES
 # Download raw data files from SHERA google drive folder
 drive_auth() # Will require you to sign into Google account and grant permission to tidyverse for access 
@@ -173,3 +172,15 @@ tempdat$landings_given_convert[tempdat$landings_given_unit == "fish"] <- fish
 
 # Will need to add in more conversion values when we get them from Melati
 # Next: check that landings flow columns add up to total landings for each trip (100% flow reported)
+
+# Clean fishing gear variable
+# Create two columns for fishing gear - one for general gear category (cat1) and another for specific gear (cat2), particularly for nets.
+tempdat$gear_cat1 <- as.character(tempdat$gear)
+tempdat$gear_cat1 <- gsub("dblnetspr|Dblnspr|Doublenet|dblnet|Net|Netspr","net", tempdat$gear_cat1)
+tempdat$gear_cat1 <- gsub("Spear","spear", tempdat$gear_cat1)
+tempdat$gear_cat1 <- gsub("Handline|handline","line", tempdat$gear_cat1)
+tempdat$gear_cat2 <- as.character(tempdat$gear)
+tempdat$gear_cat2 <- gsub("dblnetspr|Dblnspr|Doublenet|dblnet","double net",tempdat$gear_cat2)
+tempdat$gear_cat2 <- gsub("Net|Netspr|^net","single net",tempdat$gear_cat2)
+tempdat$gear_cat2 <- gsub("Spear","spear", tempdat$gear_cat2)
+tempdat$gear_cat2 <- gsub("Handline|handline","line", tempdat$gear_cat2)
