@@ -94,11 +94,12 @@ tempdat$Trip_time_unit[grep("hour", tempdat$Trip_time_unit)]<-"h"
 tempdat$Trip_time_hours<-tempdat$Trip_time_no
 tempdat<-transform(tempdat, Trip_time_hours=ifelse(Trip_time_unit=="d", Trip_time_hours*24, Trip_time_hours))
 
-### Convert landings units (boxes,baskets, ekor) to individual fish units
-tempdat$landing_unit[tempdat$landing_unit == "smal box"] <- "small box"
-tempdat$landing_unit[tempdat$landing_unit == "box kecil"] <- "small box"
-tempdat$landing_unit[tempdat$landing_unit == "ekor"] <- "fish"
-tempdat$landing_unit[tempdat$landing_unit == "bucket kecil"] <- "small bucket"
+### Convert landings units (boxes, baskets, ekor) to biomass (kg)
+# Instead of doing this for each column of units, use gsub() to make the substitution and apply() to do this across the entire dataframe
+tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("smal box", "small box", y)))
+tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("box kecil", "small box", y)))
+tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("ekor", "fish", y)))
+tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("bucket kecil", "small bucket", y)))
 tempdat$landing_no <- as.numeric(tempdat$landing_no)
 # Create empty column for the conversion calculation
 tempdat$landing_unit_fish <- "NA"
@@ -109,7 +110,7 @@ box          <- 58
 basket       <- 16
 small_box    <- 19
 bucket       <- 14
-small_bucket <- NA
+small_bucket <- 7
 fish         <- NA
 tempdat$landing_unit_convert[tempdat$landing_unit == "box"] <- box
 tempdat$landing_unit_convert[tempdat$landing_unit == "basket"] <- basket
@@ -118,8 +119,7 @@ tempdat$landing_unit_convert[tempdat$landing_unit == "bucket"] <- bucket
 tempdat$landing_unit_convert[tempdat$landing_unit == "small bucket"] <- small_bucket 
 tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- fish
 # Need to use length-weight conversion to calculate kg when "fish" is the landing unit
-# conversion for small bucket not included in calibration table. Need to ask Melati
-# Then multiply landing_no by landing_unit_convert to get all landing totals in units of fish individuals (landing_unit_fish)
+# Then multiply landing_no by landing_unit_convert to get all landing totals in units of biomass (landing_unit_fish)
 
 ### Convert landings flow units to individual fish units and check for 100% fish flow reported
 # LEARNING OPPORTUNITY for Lauren:: what is a more efficient way to make these substitutions for all relevant landings columns?
@@ -128,13 +128,6 @@ tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- fish
 #tempdat$landings_flow_convert <- "NA"
 #drop <- c("landings_flow_convert")
 #tempdat <- tempdat[ , !(names(tempdat) %in% drop)]
-
-# Instead of doing this one at a time, use gsub() to make the substitution and apply() to do this across the entire dataframe
-tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("smal box", "small box", y)))
-tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("box kecil", "small box", y)))
-tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("ekor", "fish", y)))
-tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("bucket kecil", "small bucket", y)))
-
 tempdat$landings_sold_personally_convert <- "NA"
 tempdat$landings_sold_personally_no <- as.numeric(tempdat$landings_sold_personally_no)
 tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "basket"] <- basket
