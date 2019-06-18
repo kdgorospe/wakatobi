@@ -22,6 +22,45 @@ landings<-read.csv("Wakatobi-landings_041119_FISH.csv", header=T, stringsAsFacto
 drive_download(as_id("1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC"), overwrite=TRUE) 
 trips<-read.csv("Wakatobi-landings_041119_TRIP.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
 
+# NOTES on cleaning TRIP IDs:
+# The following trips were non-unique:
+#1 11 DAHLAN - couldn't find raw data sheet; just picked most complete data row
+#GAOS
+#1 11 ACER + DULETES
+#1 25 SIDDENG
+#10 21 ARENANG
+#10 21 GAOS
+#10 21 JALIA
+#10 22 JUDER
+#10 22 MAI
+#10 22 MBILI
+#10 22 SAMSUDIN
+#10 22 UTEE
+#10 23 MUISAL
+#10 24 DINAR
+#10 24 PARJONO
+#10 25 ALWI
+#10 25 ASIRI
+#10 25 BAGONG
+#10 25 DAHLANG
+#10 25 GAOS
+#11 20 BAGON
+#7 10 ARSAN
+#7 10 ASWIN
+#7 11 JAMATIA
+#7 11 JUSINA
+#7 11 SAIPUL
+#7 11 SAIR
+#7 12 DINAR
+#7 12 GAOS
+#7 12 MUSTAMIN
+#7 12 ROY
+#7 12 SULIADI
+#7 13 IMADUDING
+#7 13 LA HENI
+#DINAR
+
+
 # Clean fish names in landings data frame using Paul's checkspelling.R script           
 # Output table of current fish names for comparison
 write.csv(as.data.frame(table(landings$Fish_name_p)), file="table_rawData_FishNames.csv", quote=FALSE)
