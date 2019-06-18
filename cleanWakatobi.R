@@ -1,5 +1,5 @@
 # R script for Wakatobi socio-economic data cleaning
-# Contact: Austin Humphries, Paul Carvalho, Kelvin Gorospe, Lauren Josephs
+# Contact: Austin Humphries, Paul Carvalho, Kelvin Gorospe, Lauren Josephs, Melati Kaye
 
 
 ### STEP ONE: set your preferred working directory using setwd() in console
@@ -35,7 +35,7 @@ write.csv(as.data.frame(table(landings$Bajau_spp_p2)), file="table_rawData_Bajau
 # Select spelling with capitalized first letter as the "correct" spelling
 # Use key.csv for correct spellings 
 # If still unsure, use table_rawData_FishNames.csv to choose more common spelling
-source("wakatobi/check_spelling.R")
+source("check_spelling.R")
 
 # First try distance_sensitivity=1
 #cleandist1<-check.spelling(df_in = landings, var_name = Fish_name_p, distance_sensitivity = 1)
@@ -45,13 +45,15 @@ source("wakatobi/check_spelling.R")
 
 # Now try distance_sensitivity = 2
 #cleandist2<-check.spelling(df_in = cleandist1a, var_name = Fish_name_p, distance_sensitivity = 2)
-#write.csv(cleandist2, file="data_landings_041119_FISH_checkspelling_dist2.csv", quote=FALSE, row.names=FALSE)
+#write.csv(cleandist2, file="data_landings_061819_FISH_checkspelling_dist2.csv", quote=FALSE, row.names=FALSE)
 #cleandist2a<-check.spelling(df_in = cleandist2, var_name = Fish_name_p, distance_sensitivity = 2)
-#write.csv(cleandist2a, file="data_landings_041119_FISH_checkspelling_dist2a.csv", quote=FALSE, row.names=FALSE)
+#write.csv(cleandist2a, file="data_landings_061819_FISH_checkspelling_dist2a.csv", quote=FALSE, row.names=FALSE)
 
-# CLEANING NOTES: DO NOT DELETE!
+# CLEANING NOTES (DO NOT DELETE): for names that I was unsure of - i.e., couldn't decide on spelling even after inspecting key.csv
+# Which spelling is kept is arbitrary - what matters is whether or not the names are for the same or different things
+# The following decisions were confirmed based on consulting with Melati Kaye
 #dist=1
-#Chose "Banguntu" (more common) over "Baguntu"
+#Chose: "Banguntu" (more common) over "Baguntu"
 #Keapu Coklat over Keapu Cokelat
 #Keapu Loong Ngaluhu over Keapu Loong Nyaluhu
 #Luppe over Kuppe
@@ -61,20 +63,22 @@ source("wakatobi/check_spelling.R")
 #Kept both Bukalang and Bulealang (labeled as "Unknown" in key.csv)
 #Kept both Dodoh Batu and Mogoh Batu
 #Keapu Bitte Mira over Keapu Bitti Mirah
-#Kept Keapu Nyarengelah, Keapu Nyarengluh, Keapu Nyarengkeh
-#Kept Keapu Goas and Keapu Garas
+#Keapu Nyarengelah over Keapu Nyarengluh; Kept Keapu Nyarengkeh separate from both Nyarengelah and Nyarengluh
+#Kept both Keapu Goas and Keapu Garas - Note: still not sure whether these are the same or different species
 #Mogo Nyulloh over Mogoh Nyuluh
-#Kept Mogoh Birrah, Mogoh Borra, and Mogoh Birro
+#Mogoh Birrah over Mogoh Borra and Mogoh Birro
+#Kept both Pogo and Popogo (triggerfish and smaller triggerfish) - these are two different Bajau words (not spelling errors), so keeping both
 #Kept both Taburoh and Taboh (labeled as "Unknown" in key.csv)
 #Kept both Tatape Buna and Tatape Bulan
 
+# OUTPUT TABLE OF CLEANED FISH NAMES
 #cleandist1<-read.csv("data_landings_041119_FISH_checkspelling_dist1.csv")
 #write.csv(as.data.frame(table(cleandist1$Fish_name_p)), "table_cleandist1_FishNames.csv")
 #cleandist1a<-read.csv("data_landings_041119_FISH_checkspelling_dist1a.csv")
 #write.csv(as.data.frame(table(cleandist1a$Fish_name_p)), "table_cleandist1a_FishNames.csv")
-#cleandist2<-read.csv("data_landings_041119_FISH_checkspelling_dist2.csv")
+#cleandist2<-read.csv("data_landings_061819_FISH_checkspelling_dist2.csv")
 #write.csv(as.data.frame(table(cleandist2$Fish_name_p)), "table_cleandist2_FishNames.csv")
-cleandist2a<-read.csv("data_landings_041119_FISH_checkspelling_dist2a.csv")
+cleandist2a<-read.csv("data_landings_061819_FISH_checkspelling_dist2a.csv") 
 write.csv(as.data.frame(table(cleandist2a$Fish_name_p)), "table_cleandist2a_FishNames.csv")
 
 landings<-cleandist2a

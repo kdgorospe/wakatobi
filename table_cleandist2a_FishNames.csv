@@ -95,176 +95,173 @@
 "94","Keapu Mira Bitti",7
 "95","Keapu Mira Sibbo",35
 "96","Keapu Ngaluhu",45
-"97","Keapu Nyarengelah",3
+"97","Keapu Nyarengelah",6
 "98","Keapu Nyarengkeh",4
-"99","Keapu Nyarengluh",3
-"100","Keapu Poppokah",46
-"101","Keapu Pote",2
-"102","Keapu Sabit",1
-"103","Keapu Setan",63
-"104","Keapu Sibbo",204
-"105","Keapu Sibbo Mirah",9
-"106","Keapu Tallah",8
-"107","Keapu Tiger",6
-"108","Keapu Tongko",1
-"109","Kekea",402
-"110","Kekea Kuneh",16
-"111","Kekea Langkau Boa",1
-"112","Keyba",9
-"113","Kokoreh",5
-"114","Kongkeh",26
-"115","Kumai",167
-"116","Kumai Batu",49
-"117","Kumai Sillah",2
-"118","Kumai Tapesu",3
-"119","Kumai Tarusan",9
-"120","Kumai Ungko Kuneh",33
-"121","Kumai Ungko Mira",12
-"122","Kumbah Buaya",2
-"123","Kurus Bali",3
-"124","Kutamba",2668
-"125","Kutamba Bannah",216
-"126","Kutamba Mantirus",39
-"127","Kutamba Sumpa",10
-"128","Kutu",1
-"129","Lambe",151
-"130","Lampa",128
-"131","Lampa Dosa",1
-"132","Lampa Loong",14
-"133","Lampa Mira",61
-"134","Lampa Pello",2
-"135","Lampa Sirah Mira",11
-"136","Lampa Ungko Mira",1
-"137","Lamudo",1
-"138","Langkoe",6
-"139","Langoang",70
-"140","Lansura",21
-"141","Lausu",100
-"142","Lausu Kutu",1
-"143","Lausu Langkau Boa",2
-"144","Lausu Tubbal Boa",2
-"145","Leppe Kuneh Boa",2
-"146","Luppe",48
-"147","Luppe Bitikan",1
-"148","Luppe Bitti",2
-"149","Luppe Hias",1
-"150","Luppe Kunih",11
-"151","Luppe Sirah",6
-"152","Luppe Tubbal Boa",6
-"153","Malelah",72
-"154","Mangali",1
-"155","Mangilala",1072
-"156","Mangilala Kuneh",51
-"157","Mogoh",170
-"158","Mogoh Angke",19
-"159","Mogoh Bataan",105
-"160","Mogoh Batu",9
-"161","Mogoh Birrah",46
-"162","Mogoh Birro",2
-"163","Mogoh Borra",27
-"164","Mogoh Coklat",81
-"165","Mogoh Hangilo",5
-"166","Mogoh Hanyulu",15
-"167","Mogoh Hijau",13
-"168","Mogoh Kunih",12
-"169","Mogoh Loong",94
-"170","Mogoh Mira",11
-"171","Mogoh Mondo",224
-"172","Mogoh Mondo Bitte",1
-"173","Mogoh Nyulloh",488
-"174","Mogoh Pote",1
-"175","Mogoh Sirah Pote",3
-"176","Opa",8
-"177","Palugandah",19
-"178","Pangaluang",52
-"179","Papalo",25
-"180","Pello",6
-"181","Pello Gusoh",2
-"182","Pello Koncang",1
-"183","Pello Lampa",2
-"184","Pello Langkau Boa",3
-"185","Pello Mira",1
-"186","Pello Nyuluh",2
-"187","Pello Pungsu",8
-"188","Pello Sirah",5
-"189","Pello Sirah Pote",6
-"190","Pello Sirip Kunih",2
-"191","Pepedo",4
-"192","Pesari",2
-"193","Pilangan",11
-"194","Pipili",72
-"195","Pogo",28
-"196","Pogo Epe",2
-"197","Pogo Hitam",1
-"198","Pogo Karupu",3
-"199","Pogo Loong",30
-"200","Pogo Mayor",12
-"201","Pogo Mira",5
-"202","Pogo Ngisirah",9
-"203","Pogo Pote",24
-"204","Pogo Punsu",2
-"205","Pogo Sirah",4
-"206","Pogo Tarusan",27
-"207","Popogo",1
-"208","Rambeng",48
-"209","Rambeng Ungko Kuneh",5
-"210","Ruruma",32
-"211","Sampeh Lea",4
-"212","Sasageh",24
-"213","Sasageh Kuneh",1
-"214","Sualalah",94
-"215","Sulai Asah",10
-"216","Sulaiasah Zebra",1
-"217","Sumpa",29
-"218","Sumpa Bannah",8
-"219","Sumpah Lelah",3
-"220","Sunu",24
-"221","Sunu Balia",1
-"222","Sunu Cambah",88
-"223","Sunu Cambah Loong",7
-"224","Sunu Coklat",7
-"225","Sunu Hitam",1
-"226","Sunu Loong",51
-"227","Sunu Mira",36
-"228","Sunu Tallah",16
-"229","Taboh",5
-"230","Taburoh",185
-"231","Talunsu",1
-"232","Tambiro",111
-"233","Tambiro Alus",1
-"234","Tape",6
-"235","Tarigongoh",9
-"236","Taringan",71
-"237","Taringan Loong",2
-"238","Tatape",25
-"239","Tatape Bulan",1
-"240","Tatape Buna",113
-"241","Tatape Dodoh",5
-"242","Tatape Kuneh",1
-"243","Tatape Sirah",1
-"244","Tatatape",1
-"245","Tibbo",41
-"246","Tibo Pote",1
-"247","Timbaloah",23
-"248","Timbungan",916
-"249","Timbungan Garas",2
-"250","Timbungan Janggutan",9
-"251","Timbungan Mira",2
-"252","Timbungan Rambayan",5
-"253","Timbungan Sanio",6
-"254","Timbungan Sirah",3
-"255","Tintah",540
-"256","Tintah Tarusan",20
-"257","Tittingan",1
-"258","Tomiga",3
-"259","Tonggol",7
-"260","Totoke",78
-"261","Tubbal Boa",1
-"262","Tuna Bambulo",2
-"263","Turisan",9
-"264","Ulapai",632
-"265","Ulapai Bataan",6
-"266","Ulapai Coklat",1
-"267","Ulapai Mira",1
-"268","Ulapai Patoh",11
-"269","Ururuh",3
+"99","Keapu Poppokah",46
+"100","Keapu Pote",2
+"101","Keapu Sabit",1
+"102","Keapu Setan",63
+"103","Keapu Sibbo",204
+"104","Keapu Sibbo Mirah",9
+"105","Keapu Tallah",8
+"106","Keapu Tiger",6
+"107","Keapu Tongko",1
+"108","Kekea",402
+"109","Kekea Kuneh",16
+"110","Kekea Langkau Boa",1
+"111","Keyba",9
+"112","Kokoreh",5
+"113","Kongkeh",26
+"114","Kumai",167
+"115","Kumai Batu",49
+"116","Kumai Sillah",2
+"117","Kumai Tapesu",3
+"118","Kumai Tarusan",9
+"119","Kumai Ungko Kuneh",33
+"120","Kumai Ungko Mira",12
+"121","Kumbah Buaya",2
+"122","Kurus Bali",3
+"123","Kutamba",2668
+"124","Kutamba Bannah",216
+"125","Kutamba Mantirus",39
+"126","Kutamba Sumpa",10
+"127","Kutu",1
+"128","Lambe",151
+"129","Lampa",128
+"130","Lampa Dosa",1
+"131","Lampa Loong",14
+"132","Lampa Mira",61
+"133","Lampa Pello",2
+"134","Lampa Sirah Mira",11
+"135","Lampa Ungko Mira",1
+"136","Lamudo",1
+"137","Langkoe",6
+"138","Langoang",70
+"139","Lansura",21
+"140","Lausu",100
+"141","Lausu Kutu",1
+"142","Lausu Langkau Boa",2
+"143","Lausu Tubbal Boa",2
+"144","Leppe Kuneh Boa",2
+"145","Luppe",48
+"146","Luppe Bitikan",1
+"147","Luppe Bitti",2
+"148","Luppe Hias",1
+"149","Luppe Kunih",11
+"150","Luppe Sirah",6
+"151","Luppe Tubbal Boa",6
+"152","Malelah",72
+"153","Mangali",1
+"154","Mangilala",1072
+"155","Mangilala Kuneh",51
+"156","Mogoh",170
+"157","Mogoh Angke",19
+"158","Mogoh Bataan",105
+"159","Mogoh Batu",9
+"160","Mogoh Birrah",75
+"161","Mogoh Coklat",81
+"162","Mogoh Hangilo",5
+"163","Mogoh Hanyulu",15
+"164","Mogoh Hijau",13
+"165","Mogoh Kunih",12
+"166","Mogoh Loong",94
+"167","Mogoh Mira",11
+"168","Mogoh Mondo",224
+"169","Mogoh Mondo Bitte",1
+"170","Mogoh Nyulloh",488
+"171","Mogoh Pote",1
+"172","Mogoh Sirah Pote",3
+"173","Opa",8
+"174","Palugandah",19
+"175","Pangaluang",52
+"176","Papalo",25
+"177","Pello",6
+"178","Pello Gusoh",2
+"179","Pello Koncang",1
+"180","Pello Lampa",2
+"181","Pello Langkau Boa",3
+"182","Pello Mira",1
+"183","Pello Nyuluh",2
+"184","Pello Pungsu",8
+"185","Pello Sirah",5
+"186","Pello Sirah Pote",6
+"187","Pello Sirip Kunih",2
+"188","Pepedo",4
+"189","Pesari",2
+"190","Pilangan",11
+"191","Pipili",72
+"192","Pogo",28
+"193","Pogo Epe",2
+"194","Pogo Hitam",1
+"195","Pogo Karupu",3
+"196","Pogo Loong",30
+"197","Pogo Mayor",12
+"198","Pogo Mira",5
+"199","Pogo Ngisirah",9
+"200","Pogo Pote",24
+"201","Pogo Punsu",2
+"202","Pogo Sirah",4
+"203","Pogo Tarusan",27
+"204","Popogo",1
+"205","Rambeng",48
+"206","Rambeng Ungko Kuneh",5
+"207","Ruruma",32
+"208","Sampeh Lea",4
+"209","Sasageh",24
+"210","Sasageh Kuneh",1
+"211","Sualalah",94
+"212","Sulai Asah",10
+"213","Sulaiasah Zebra",1
+"214","Sumpa",29
+"215","Sumpa Bannah",8
+"216","Sumpah Lelah",3
+"217","Sunu",24
+"218","Sunu Balia",1
+"219","Sunu Cambah",88
+"220","Sunu Cambah Loong",7
+"221","Sunu Coklat",7
+"222","Sunu Hitam",1
+"223","Sunu Loong",51
+"224","Sunu Mira",36
+"225","Sunu Tallah",16
+"226","Taboh",5
+"227","Taburoh",185
+"228","Talunsu",1
+"229","Tambiro",111
+"230","Tambiro Alus",1
+"231","Tape",6
+"232","Tarigongoh",9
+"233","Taringan",71
+"234","Taringan Loong",2
+"235","Tatape",25
+"236","Tatape Bulan",1
+"237","Tatape Buna",113
+"238","Tatape Dodoh",5
+"239","Tatape Kuneh",1
+"240","Tatape Sirah",1
+"241","Tatatape",1
+"242","Tibbo",41
+"243","Tibo Pote",1
+"244","Timbaloah",23
+"245","Timbungan",916
+"246","Timbungan Garas",2
+"247","Timbungan Janggutan",9
+"248","Timbungan Mira",2
+"249","Timbungan Rambayan",5
+"250","Timbungan Sanio",6
+"251","Timbungan Sirah",3
+"252","Tintah",540
+"253","Tintah Tarusan",20
+"254","Tittingan",1
+"255","Tomiga",3
+"256","Tonggol",7
+"257","Totoke",78
+"258","Tubbal Boa",1
+"259","Tuna Bambulo",2
+"260","Turisan",9
+"261","Ulapai",632
+"262","Ulapai Bataan",6
+"263","Ulapai Coklat",1
+"264","Ulapai Mira",1
+"265","Ulapai Patoh",11
+"266","Ururuh",3
