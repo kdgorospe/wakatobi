@@ -22,18 +22,21 @@ landings<-read.csv("Wakatobi-landings_041119_FISH.csv", header=T, stringsAsFacto
 drive_download(as_id("1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC"), overwrite=TRUE) 
 trips<-read.csv("Wakatobi-landings_041119_TRIP.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
 
-# NOTES on cleaning TRIP IDs:
+# NOTES on cleaning TRIP IDs: try to coroborate data with raw data sheets
+# 1 - use date to track down raw data file
+# 2 - if this doesn't work, search by "captain name"
+# 3 - if can't find raw data sheet, keep all trips for now
 # The following trips were non-unique:
-#1 11 DAHLAN - couldn't find raw data sheet; just picked most complete data row
-#GAOS
-#1 11 ACER + DULETES
-#1 25 SIDDENG
-#10 21 ARENANG
-#10 21 GAOS
-#10 21 JALIA
-#10 22 JUDER
-#10 22 MAI
-#10 22 MBILI
+#1 11 DAHLAN - couldn't find raw data sheet !!!! (still need to address this)
+#GAOS - modified trip ID to include dates
+#1 11 ACER + DULETES - couldn't find raw data sheet !!!! (still need to address this)
+#1 25 SIDDENG - kept data row with "bulawis" as dominant species
+#10 21 ARENANG - data rows were identical
+#10 21 GAOS - data rows were identical
+#10 21 JALIA - data rows were identical
+#10 22 JUDER - data rows were identical
+#10 22 MAI - data rows were idenitcal
+#10 22 MBILI - data rows were identical
 #10 22 SAMSUDIN
 #10 22 UTEE
 #10 23 MUISAL
@@ -43,7 +46,7 @@ trips<-read.csv("Wakatobi-landings_041119_TRIP.csv", header=T, stringsAsFactors 
 #10 25 ASIRI
 #10 25 BAGONG
 #10 25 DAHLANG
-#10 25 GAOS
+#10 25 GAOS - data rows were identical
 #11 20 BAGON
 #7 10 ARSAN
 #7 10 ASWIN
