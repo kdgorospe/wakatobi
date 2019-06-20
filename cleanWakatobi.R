@@ -17,11 +17,6 @@ drive_auth() # Will require you to sign into Google account and grant permission
 drive_download(as_id("1_71pviN-qsSmvAZAgQMCQIqkEXpKTPcd"), overwrite=TRUE) # Saves file to working directory
 landings<-read.csv("Wakatobi-landings_041119_FISH.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
 
-#drive_download("Wakatobi-landings_041119_TRIP.csv", overwrite=TRUE)
-#file id: 1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC
-drive_download(as_id("1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC"), overwrite=TRUE) 
-trips<-read.csv("Wakatobi-landings_041119_TRIP.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
-
 # NOTES on cleaning TRIP IDs: 
 
 # A: Most duplicate trip IDs were identical rows of data: Deleted duplicates
@@ -41,6 +36,17 @@ trips<-read.csv("Wakatobi-landings_041119_TRIP.csv", header=T, stringsAsFactors 
 
 # D: Deleted all trip IDs with missing dates
 # Checked all of these and found them to be duplicate rows after adding dates to tripID
+# SAVED AS "Wakatobi-landings_062019_TRIP-CLEAN.csv"
+
+# OLD trips file
+#file id: 1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC
+#drive_download(as_id("1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC"), overwrite=TRUE)
+#trips<-read.csv("Wakatobi-landings_04119_TRIP.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
+
+# CLEANED trips file
+#file id: 1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP
+drive_download(as_id("1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP"), overwrite=TRUE) 
+trips<-read.csv("Wakatobi-landings_062019_TRIP-CLEAN.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
 
 
 # Clean fish names in landings data frame using Paul's checkspelling.R script           
