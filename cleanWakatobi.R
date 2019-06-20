@@ -26,43 +26,74 @@ trips<-read.csv("Wakatobi-landings_041119_TRIP.csv", header=T, stringsAsFactors 
 # 1 - use date to track down raw data file
 # 2 - if this doesn't work, search by "captain name"
 # 3 - if can't find raw data sheet, keep all trips for now
+
 # The following trips were non-unique:
 #1 11 DAHLAN - couldn't find raw data sheet !!!! (still need to address this)
-#GAOS - modified trip ID to include dates
+#GAOS - modified trip ID to include dates and checked again for duplicate rows
 #1 11 ACER + DULETES - couldn't find raw data sheet !!!! (still need to address this)
 #1 25 SIDDENG - kept data row with "bulawis" as dominant species
-#10 21 ARENANG - data rows were identical
-#10 21 GAOS - data rows were identical
-#10 21 JALIA - data rows were identical
-#10 22 JUDER - data rows were identical
-#10 22 MAI - data rows were idenitcal
-#10 22 MBILI - data rows were identical
-#10 22 SAMSUDIN
-#10 22 UTEE
-#10 23 MUISAL
-#10 24 DINAR
-#10 24 PARJONO
-#10 25 ALWI
-#10 25 ASIRI
-#10 25 BAGONG
-#10 25 DAHLANG
-#10 25 GAOS - data rows were identical
-#11 20 BAGON
-#7 10 ARSAN
-#7 10 ASWIN
-#7 11 JAMATIA
-#7 11 JUSINA
-#7 11 SAIPUL
-#7 11 SAIR
-#7 12 DINAR
-#7 12 GAOS
-#7 12 MUSTAMIN
-#7 12 ROY
-#7 12 SULIADI
-#7 13 IMADUDING
-#7 13 LA HENI
-#DINAR
+#10 21 ARENANG - duplicate rows deleted
+#10 21 GAOS - duplicate rows deleted
+#10 21 JALIA - duplicate rows deleted
+#10 22 JUDER - duplicate rows deleted
+#10 22 MAI - duplicate rows deleted
+#10 22 MBILI - duplicate rows deleted
+#10 22 SAMSUDIN - duplicate rows deleted
+#10 22 UTEE - duplicate rows deleted
+#10 23 MUISAL - duplicate rows deleted
+#10 24 DINAR - duplicate rows deleted
+#10 24 PARJONO - duplicate rows deleted
+#10 25 ALWI - duplicate rows deleted
+#10 25 ASIRI - duplicate rows deleted
+#10 25 BAGONG - duplicate rows deleted
+#10 25 DAHLANG - duplicate rows deleted
+#10 25 GAOS - duplicate rows deleted
+#11 20 BAGON - couldn't find raw data sheet !!!! (still need to address this)
+#7 10 ARSAN - duplicate rows deleted
+#7 10 ASWIN - duplicate rows deleted
+#7 11 JAMATIA - duplicate rows deleted
+#7 11 JUSINA - duplicate rows deleted
+#7 11 SAIPUL - duplicate rows deleted
+#7 11 SAIR - duplicate rows deleted
+#7 12 DINAR - duplicate rows deleted
+#7 12 GAOS - duplicate rows deleted
+#7 12 MUSTAMIN - duplicate rows deleted
+#7 12 ROY - duplicate rows deleted
+#7 12 SULIADI - duplicate rows deleted
+#7 13 IMADUDING - duplicate rows deleted
+#7 13 LA HENI - duplicate rows deleted
+#DINAR - modified trip ID to include dates and checked again for duplicate rows
 
+# NEXT: Check all trip IDs with missing dates
+#ACER + DULETES
+#ALWI
+#ARENANG
+#ARSAN
+#ASIRI
+#ASWIN
+#BAGONG
+#DAHLAN
+#DAHLANG
+#DINAR
+#GAOS
+#IMADUDING
+#JALIA
+#JAMATIA
+#JUDER
+#JUSINA
+#LA HENI
+#MAI
+#MBILI
+#MUISAL
+#MUSTAMIN
+#NA NA
+#PARJONO
+#ROY
+#SAIPUL
+#SAIR
+#SAMSUDIN
+#SULIADI
+#UTEE
 
 # Clean fish names in landings data frame using Paul's checkspelling.R script           
 # Output table of current fish names for comparison
