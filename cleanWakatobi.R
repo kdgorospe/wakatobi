@@ -230,5 +230,29 @@ tmp_df$costs_total_IDR[c(75,76)] <- as.character(as.numeric(tmp_df$costs_food[c(
 tmp_df$costs_total_IDR[77] <- tmp_df$costs_ice[77]
 
 ### Clean fishing ground names
-trips$fishing_grnd1
+# Make all characters in each column lower case
+trips$fishing_grnd1 <- tolower(trips$fishing_grnd1)
+trips$fgnd1_p <- tolower(trips$fgnd1_p)
+# Create a temporary dataframe for manipulation
+tmp <- trips
+# Create a single verctor with names for the first fishing ground
+fishing_ground_1 <- NULL
+for(i in 1:length(tmp$fishing_grnd1)){
+  if(tmp$fishing_grnd1[i] == tmp$fgnd1_p[i]){
+    fishing_ground_1[i] <- tmp$fishing_grnd1[i]
+  } else if(tmp$fishing_grnd1[i]=="" & tmp$fgnd1_p[i]!=""){
+    fishing_ground_1[i] <- tmp$fgnd1_p[i]
+  } else if(tmp$fishing_grnd1[i]!="" & tmp$fgnd1_p[i]==""){
+    fishing_ground_1[i] <- tmp$fishing_grnd1[i]
+  } else {
+    fishing_ground_1[i] <- NA
+  }
+}
+# sum(is.na(fishing_ground_1))
+# Create a new column for cleaned fishing ground column
+trips$fishing_ground_1 <- fishing_ground_1
+# Check fishing ground 2
+trips$fishing_grnd2 <- tolower(trips$fishing_grnd2)
+
+
 
