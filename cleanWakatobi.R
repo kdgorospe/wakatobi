@@ -197,7 +197,7 @@ tempdat$landings_given_convert[tempdat$landings_given_unit == "fish"] <- fish
 # Will need to add in more conversion values when we get them from Melati
 # Next: check that landings flow columns add up to total landings for each trip (100% flow reported)
 
-# Clean fishing gear variable
+### Clean fishing gear variable
 # Create two columns for fishing gear - one for general gear category (cat1) and another for specific gear (cat2), particularly for nets.
 tempdat$gear_cat1 <- as.character(tempdat$gear)
 tempdat$gear_cat1 <- gsub("dblnetspr|Dblnspr|Doublenet|dblnet|Net|Netspr","net", tempdat$gear_cat1)
@@ -209,7 +209,7 @@ tempdat$gear_cat2 <- gsub("Net|Netspr|^net","single net",tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Spear","spear", tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Handline|handline","line", tempdat$gear_cat2)
 
-# Clean total cost column - using "Wakatobi-landings_062019_TRIP-CLEAN.csv"
+### Clean total cost column - using "Wakatobi-landings_062019_TRIP-CLEAN.csv"
 # first remove commas
 tmp_df <- trips
 tmp_df$costs_total_IDR <- gsub(",","",tmp_df$costs_total_IDR)
@@ -229,4 +229,6 @@ tmp_df$costs_total_IDR[c(18,21)] <- tmp_df$Costs_gas[c(18,21)]
 tmp_df$costs_total_IDR[c(75,76)] <- as.character(as.numeric(tmp_df$costs_food[c(75,76)]) + as.numeric(tmp_df$Costs_gas[c(75,76)]))
 tmp_df$costs_total_IDR[77] <- tmp_df$costs_ice[77]
 
+### Clean fishing ground names
+trips$fishing_grnd1
 
