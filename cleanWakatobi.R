@@ -208,3 +208,14 @@ tempdat$gear_cat2 <- gsub("dblnetspr|Dblnspr|Doublenet|dblnet","double net",temp
 tempdat$gear_cat2 <- gsub("Net|Netspr|^net","single net",tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Spear","spear", tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Handline|handline","line", tempdat$gear_cat2)
+
+# Clean total cost column - using "Wakatobi-landings_062019_TRIP-CLEAN.csv"
+# first remove commas
+tmp_df <- trips
+tmp_df$costs_total_IDR <- gsub(",","",tmp_df$costs_total_IDR)
+# trim empty space between characters
+
+
+
+
+
