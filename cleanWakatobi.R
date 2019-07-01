@@ -6,6 +6,7 @@
 setwd("~/")
 rm(list=ls())
 library(googledrive)
+library(dplyr)
 
 ### GET DATA AND CREATE SUMMARY TABLES
 # Download raw data files from SHERA google drive folder
@@ -152,6 +153,7 @@ tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- fish
 # Need to use length-weight conversion to calculate kg when "fish" is the landing unit
 # Then multiply landing_no by landing_unit_convert to get all landing totals in units of biomass (landing_unit_fish)
 
+
 ### Convert landings flow units to individual fish units and check for 100% fish flow reported
 # LEARNING OPPORTUNITY for Lauren:: what is a more efficient way to make these substitutions for all relevant landings columns?
 # As of now, I do them one at a time
@@ -197,7 +199,8 @@ tempdat$landings_given_convert[tempdat$landings_given_unit == "fish"] <- fish
 # Will need to add in more conversion values when we get them from Melati
 # Next: check that landings flow columns add up to total landings for each trip (100% flow reported)
 
-# Clean fishing gear variable
+
+### Clean fishing gear variable
 # Create two columns for fishing gear - one for general gear category (cat1) and another for specific gear (cat2), particularly for nets.
 tempdat$gear_cat1 <- as.character(tempdat$gear)
 tempdat$gear_cat1 <- gsub("dblnetspr|Dblnspr|Doublenet|dblnet|Net|Netspr","net", tempdat$gear_cat1)
@@ -208,3 +211,70 @@ tempdat$gear_cat2 <- gsub("dblnetspr|Dblnspr|Doublenet|dblnet","double net",temp
 tempdat$gear_cat2 <- gsub("Net|Netspr|^net","single net",tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Spear","spear", tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Handline|handline","line", tempdat$gear_cat2)
+
+
+### Clean total cost column - using "Wakatobi-landings_062019_TRIP-CLEAN.csv"
+# first remove commas
+tmp_df <- trips
+tmp_df$costs_total_IDR <- gsub(",","",tmp_df$costs_total_IDR)
+tmp_df$Costs_gas <- gsub(",","",tmp_df$Costs_gas)
+tmp_df$costs_ice <- gsub(",","",tmp_df$costs_ice)
+tmp_df$costs_food <- gsub(",","",tmp_df$costs_food)
+# trim empty space between characters
+tmp_df$costs_total_IDR <- gsub(" ","",tmp_df$costs_total_IDR)
+tmp_df$Costs_gas <- gsub(" ","",tmp_df$Costs_gas)
+tmp_df$costs_ice <- gsub(" ","",tmp_df$costs_ice)
+tmp_df$costs_food <- gsub(" ","",tmp_df$costs_food)
+# find empty rows
+empty_totals <- which(tmp_df$costs_total_IDR == "")
+other_costs <- tmp_df[empty_totals,c(44,45,46)]
+# find other costs that can substitute for total cost
+tmp_df$costs_total_IDR[c(18,21)] <- tmp_df$Costs_gas[c(18,21)]
+tmp_df$costs_total_IDR[c(75,76)] <- as.character(as.numeric(tmp_df$costs_food[c(75,76)]) + as.numeric(tmp_df$Costs_gas[c(75,76)]))
+tmp_df$costs_total_IDR[77] <- tmp_df$costs_ice[77]
+
+
+### Clean fishing ground names
+# Make all characters in each column lower case
+trips$fishing_grnd1 <- tolower(trips$fishing_grnd1)
+trips$fgnd1_p <- tolower(trips$fgnd1_p)
+# Create a temporary dataframe for manipulation
+tmp <- trips
+# Create a single verctor with names for the first fishing ground
+fishing_ground_1 <- NULL
+for(i in 1:length(tmp$fishing_grnd1)){
+  if(tmp$fishing_grnd1[i] == tmp$fgnd1_p[i]){
+    fishing_ground_1[i] <- tmp$fishing_grnd1[i]
+  } else if(tmp$fishing_grnd1[i]=="" & tmp$fgnd1_p[i]!=""){
+    fishing_ground_1[i] <- tmp$fgnd1_p[i]
+  } else if(tmp$fishing_grnd1[i]!="" & tmp$fgnd1_p[i]==""){
+    fishing_ground_1[i] <- tmp$fishing_grnd1[i]
+  } else {
+    fishing_ground_1[i] <- NA
+  }
+}
+# sum(is.na(fishing_ground_1))
+# Create a new column for cleaned fishing ground column
+trips$fishing_ground_1 <- fishing_ground_1
+# Check fishing ground 2
+trips$fishing_grnd2 <- tolower(trips$fishing_grnd2)
+
+
+### Clean fish name columns
+# Just copy and paste from first column into the second if blank or vice versa
+cleandist2a$Fish_name_p <- as.character(cleandist2a$Fish_name_p)
+cleandist2a$Bajau_genus <- as.character(cleandist2a$Bajau_genus)
+for(i in 1:length(cleandist2a$Fish_name_p)){
+  if(cleandist2a$Fish_name_p[i] == "" & cleandist2a$Bajau_genus[i] != ""){
+    cleandist2a$Fish_name_p[i] <- cleandist2a$Bajau_genus[i[]]
+  } else if (cleandist2a$Bajau_genus[i] == "" & cleandist2a$Fish_name_p[i] != ""){
+    cleandist2a$Bajau_genus[i] <- cleandist2a$Fish_name_p[i]
+  }
+  # else do nothing
+}
+
+
+
+
+
+
