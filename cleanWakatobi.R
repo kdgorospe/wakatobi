@@ -213,27 +213,7 @@ tempdat$gear_cat2 <- gsub("Spear","spear", tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Handline|handline","line", tempdat$gear_cat2)
 
 
-### Clean total cost column - using "Wakatobi-landings_062019_TRIP-CLEAN.csv"
-# first remove commas
-tmp_df <- trips
-tmp_df$costs_total_IDR <- gsub(",","",tmp_df$costs_total_IDR)
-tmp_df$Costs_gas <- gsub(",","",tmp_df$Costs_gas)
-tmp_df$costs_ice <- gsub(",","",tmp_df$costs_ice)
-tmp_df$costs_food <- gsub(",","",tmp_df$costs_food)
-# trim empty space between characters
-tmp_df$costs_total_IDR <- gsub(" ","",tmp_df$costs_total_IDR)
-tmp_df$Costs_gas <- gsub(" ","",tmp_df$Costs_gas)
-tmp_df$costs_ice <- gsub(" ","",tmp_df$costs_ice)
-tmp_df$costs_food <- gsub(" ","",tmp_df$costs_food)
-# find empty rows
-empty_totals <- which(tmp_df$costs_total_IDR == "")
-other_costs <- tmp_df[empty_totals,c(44,45,46)]
-# find other costs that can substitute for total cost
-tmp_df$costs_total_IDR[c(18,21)] <- tmp_df$Costs_gas[c(18,21)]
-tmp_df$costs_total_IDR[c(75,76)] <- as.character(as.numeric(tmp_df$costs_food[c(75,76)]) + as.numeric(tmp_df$Costs_gas[c(75,76)]))
-tmp_df$costs_total_IDR[77] <- tmp_df$costs_ice[77]
-
-
+# Repeat steps below with merged dataframe
 ### Clean fishing ground names
 # Make all characters in each column lower case
 trips$fishing_grnd1 <- tolower(trips$fishing_grnd1)
