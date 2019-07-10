@@ -2,7 +2,7 @@
 # Contact: Austin Humphries, Paul Carvalho, Kelvin Gorospe, Lauren Josephs, Melati Kaye
 
 
-### STEP ONE: set your preferred working directory using setwd() in console
+### STEP ONE: setwd() to local repository
 ### setwd("~/Analyses/wakatobi")
 
 rm(list=ls())
@@ -11,12 +11,12 @@ library(dplyr)
 
 ### GET DATA AND CREATE SUMMARY TABLES
 # Download raw data files from SHERA google drive folder
-drive_auth() # Will require you to sign into Google account and grant permission to tidyverse for access 
+#drive_auth() # Will require you to sign into Google account and grant permission to tidyverse for access 
 #drive_download("Wakatobi-landings_041119_FISH.csv", type="csv", overwrite=TRUE)  # saves file locally; overwrite in case you've downloaded it before and want the most up-to-date
 #file id: 1_71pviN-qsSmvAZAgQMCQIqkEXpKTPcd
 #Use File ID method: more specific file identification
-drive_download(as_id("1_71pviN-qsSmvAZAgQMCQIqkEXpKTPcd"), overwrite=TRUE) # Saves file to working directory
-landings<-read.csv("Wakatobi-landings_041119_FISH.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
+#drive_download(as_id("1_71pviN-qsSmvAZAgQMCQIqkEXpKTPcd"), overwrite=TRUE) # Saves file to working directory
+#landings<-read.csv("Wakatobi-landings_041119_FISH.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
 
 # NOTES on cleaning TRIP IDs: 
 
@@ -43,19 +43,16 @@ landings<-read.csv("Wakatobi-landings_041119_FISH.csv", header=T, stringsAsFacto
 #file id: 1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC
 #drive_download(as_id("1lVYpdmf8i0BZYbK5iQxXn2eFR1klxWbC"), overwrite=TRUE)
 #trips<-read.csv("Wakatobi-landings_04119_TRIP.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
+#write.csv(as.data.frame(table(trips$trip_id)), "table_tripID_04119.csv") 
 
-# CLEANED trips file
-#file id: 1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP
-drive_download(as_id("1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP"), overwrite=TRUE) 
-trips<-read.csv("Wakatobi-landings_062019_TRIP-CLEAN.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
 
 
 # Clean fish names in landings data frame using Paul's checkspelling.R script           
 # Output table of current fish names for comparison
-write.csv(as.data.frame(table(landings$Fish_name_p)), file="table_rawData_FishNames.csv", quote=FALSE)
-write.csv(as.data.frame(table(landings$Bajau_genus)), file="table_rawData_BajauGenus.csv", quote=FALSE)
-write.csv(as.data.frame(table(landings$Bajau_spp_p1)), file="table_rawData_BajauSpp1.csv", quote=FALSE)
-write.csv(as.data.frame(table(landings$Bajau_spp_p2)), file="table_rawData_BajauSpp2.csv", quote=FALSE)
+#write.csv(as.data.frame(table(landings$Fish_name_p)), file="table_rawData_FishNames.csv", quote=FALSE)
+#write.csv(as.data.frame(table(landings$Bajau_genus)), file="table_rawData_BajauGenus.csv", quote=FALSE)
+#write.csv(as.data.frame(table(landings$Bajau_spp_p1)), file="table_rawData_BajauSpp1.csv", quote=FALSE)
+#write.csv(as.data.frame(table(landings$Bajau_spp_p2)), file="table_rawData_BajauSpp2.csv", quote=FALSE)
 # Column: Fish_name_p has the most number of categories; Clean this column first and create the other columns (Genus, Spp1, Spp2 based on this)
 
 ### SPELL CHECK FISH NAMES
@@ -63,7 +60,7 @@ write.csv(as.data.frame(table(landings$Bajau_spp_p2)), file="table_rawData_Bajau
 # Select spelling with capitalized first letter as the "correct" spelling
 # Use key.csv for correct spellings 
 # If still unsure, use table_rawData_FishNames.csv to choose more common spelling
-source("check_spelling.R")
+#source("check_spelling.R")
 
 # First try distance_sensitivity=1
 #cleandist1<-check.spelling(df_in = landings, var_name = Fish_name_p, distance_sensitivity = 1)
@@ -106,17 +103,27 @@ source("check_spelling.R")
 #write.csv(as.data.frame(table(cleandist1a$Fish_name_p)), "table_cleandist1a_FishNames.csv")
 #cleandist2<-read.csv("data_landings_061819_FISH_checkspelling_dist2.csv")
 #write.csv(as.data.frame(table(cleandist2$Fish_name_p)), "table_cleandist2_FishNames.csv")
-cleandist2a<-read.csv("data_landings_061819_FISH_checkspelling_dist2a.csv") 
-write.csv(as.data.frame(table(cleandist2a$Fish_name_p)), "table_cleandist2a_FishNames.csv")
+#cleandist2a<-read.csv("data_landings_061819_FISH_checkspelling_dist2a.csv") 
+#write.csv(as.data.frame(table(cleandist2a$Fish_name_p)), "table_cleandist2a_FishNames.csv")
 
-landings<-cleandist2a
+# READ IN latest CLEANED fish landings file here:
+drive_auth() # Will require you to sign into Google account and grant permission to tidyverse for access 
+drive_download(as_id("10-ERWTJI2SZS0ljP9noprFhmKU0sjDBN"), overwrite=TRUE) # Saves file to working directory
+landings<-read.csv("Wakatobi-landings_061819_FISH.csv") 
+file.remove("Wakatobi-landings_061819_FISH.csv")
+
+# READ IN latest CLEANED trips file here:
+#file id: 1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP
+drive_download(as_id("1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP"), overwrite=TRUE) 
+trips<-read.csv("Wakatobi-landings_062019_TRIP.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
+file.remove("Wakatobi-landings_062019_TRIP.csv")
+
 
 ### MERGE fish and trip data
 dim(landings)
 dim(trips)
 
 mergecol<-names(landings)[names(landings) %in% names(trips)]
-write.csv(as.data.frame(table(trips$trip_id)), "table_tripID.csv") 
 tempdat<-merge(landings, trips, by=mergecol)
 
 ### Convert trip time to single standardized unit (USE: HOURS)
