@@ -2,8 +2,9 @@
 # Contact: Austin Humphries, Paul Carvalho, Kelvin Gorospe, Lauren Josephs, Melati Kaye
 
 
-### STEP ONE: setwd to any directory different from your github repo
-setwd("~/")
+### STEP ONE: set your preferred working directory using setwd() in console
+### setwd("~/Analyses/wakatobi")
+
 rm(list=ls())
 library(googledrive)
 library(dplyr)
@@ -14,9 +15,8 @@ drive_auth() # Will require you to sign into Google account and grant permission
 #drive_download("Wakatobi-landings_041119_FISH.csv", type="csv", overwrite=TRUE)  # saves file locally; overwrite in case you've downloaded it before and want the most up-to-date
 #file id: 1_71pviN-qsSmvAZAgQMCQIqkEXpKTPcd
 #Use File ID method: more specific file identification
-tmpdat<-drive_download(as_id("1_71pviN-qsSmvAZAgQMCQIqkEXpKTPcd"), overwrite=TRUE) # Saves file to working directory
+drive_download(as_id("1_71pviN-qsSmvAZAgQMCQIqkEXpKTPcd"), overwrite=TRUE) # Saves file to working directory
 landings<-read.csv("Wakatobi-landings_041119_FISH.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
-file.remove("Wakatobi-landings_041119_FISH.csv")
 
 # NOTES on cleaning TRIP IDs: 
 
@@ -48,7 +48,7 @@ file.remove("Wakatobi-landings_041119_FISH.csv")
 #file id: 1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP
 drive_download(as_id("1gL7_gUFYUtETEVDBlNQ3FN7Ddt04AIsP"), overwrite=TRUE) 
 trips<-read.csv("Wakatobi-landings_062019_TRIP-CLEAN.csv", header=T, stringsAsFactors = FALSE, strip.white = TRUE)
-file.remove("Wakatobi-landings_062019_TRIP-CLEAN.csv")
+
 
 # Clean fish names in landings data frame using Paul's checkspelling.R script           
 # Output table of current fish names for comparison
