@@ -218,7 +218,6 @@ tempdat$gear_cat2 <- gsub("Net|Netspr|^net","single net",tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Spear","spear", tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Handline|handline","line", tempdat$gear_cat2)
 
-
 ### Clean fishing ground names
 # make all characters in each column lower case
 tempdat <- tempdat %>%
@@ -243,20 +242,19 @@ for(i in 1:length(tmp$fishing_grnd1)){
 # Create a new column for cleaned fishing ground column
 tempdat$fishing_ground_1 <- fishing_ground_1
 
-
-
 ### Clean fish name columns
 # Just copy and paste from first column into the second if blank or vice versa
-cleandist2a$Fish_name_p <- as.character(cleandist2a$Fish_name_p)
-cleandist2a$Bajau_genus <- as.character(cleandist2a$Bajau_genus)
-for(i in 1:length(cleandist2a$Fish_name_p)){
-  if(cleandist2a$Fish_name_p[i] == "" & cleandist2a$Bajau_genus[i] != ""){
-    cleandist2a$Fish_name_p[i] <- cleandist2a$Bajau_genus[i[]]
-  } else if (cleandist2a$Bajau_genus[i] == "" & cleandist2a$Fish_name_p[i] != ""){
-    cleandist2a$Bajau_genus[i] <- cleandist2a$Fish_name_p[i]
+tempdat$Fish_name_p <- as.character(tempdat$Fish_name_p)
+tempdat$Bajau_genus <- as.character(tempdat$Bajau_genus)
+for(i in 1:length(tempdat$Fish_name_p)){
+  if(tempdat$Fish_name_p[i] == "" & tempdat$Bajau_genus[i] != ""){
+    tempdat$Fish_name_p[i] <- tempdat$Bajau_genus[i[]]
+  } else if (tempdat$Bajau_genus[i] == "" & tempdat$Fish_name_p[i] != ""){
+    tempdat$Bajau_genus[i] <- tempdat$Fish_name_p[i]
   }
   # else do nothing
 }
+
 
 
 
