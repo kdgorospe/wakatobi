@@ -255,9 +255,10 @@ for(i in 1:length(tempdat$Fish_name_p)){
   # else do nothing
 }
 
-
-
-
+### Check spelling of fishing grounds
+# fishing_ground_df <- data.frame(original_fg = unique(tempdat$fishing_grnd1),
+#                                 new_fg = NA)
+# write.csv(fishing_ground_df, "fishing_grounds.csv")
 
 
 
