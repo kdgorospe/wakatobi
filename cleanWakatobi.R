@@ -160,7 +160,6 @@ tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- fish
 # Need to use length-weight conversion to calculate kg when "fish" is the landing unit
 # Then multiply landing_no by landing_unit_convert to get all landing totals in units of biomass (landing_unit_fish)
 
-
 ### Convert landings flow units to individual fish units and check for 100% fish flow reported
 # LEARNING OPPORTUNITY for Lauren:: what is a more efficient way to make these substitutions for all relevant landings columns?
 # As of now, I do them one at a time
@@ -220,13 +219,13 @@ tempdat$gear_cat2 <- gsub("Spear","spear", tempdat$gear_cat2)
 tempdat$gear_cat2 <- gsub("Handline|handline","line", tempdat$gear_cat2)
 
 
-# Repeat steps below with merged dataframe
 ### Clean fishing ground names
-# Make all characters in each column lower case
-trips$fishing_grnd1 <- tolower(trips$fishing_grnd1)
-trips$fgnd1_p <- tolower(trips$fgnd1_p)
+# make all characters in each column lower case
+tempdat <- tempdat %>%
+     mutate(fishing_grnd1 = tolower(.$fishing_grnd1)) %>%
+     mutate(fgnd1_p = tolower(.$fgnd1_p))
 # Create a temporary dataframe for manipulation
-tmp <- trips
+tmp <- tempdat
 # Create a single verctor with names for the first fishing ground
 fishing_ground_1 <- NULL
 for(i in 1:length(tmp$fishing_grnd1)){
@@ -242,9 +241,8 @@ for(i in 1:length(tmp$fishing_grnd1)){
 }
 # sum(is.na(fishing_ground_1))
 # Create a new column for cleaned fishing ground column
-trips$fishing_ground_1 <- fishing_ground_1
-# Check fishing ground 2
-trips$fishing_grnd2 <- tolower(trips$fishing_grnd2)
+tempdat$fishing_ground_1 <- fishing_ground_1
+
 
 
 ### Clean fish name columns
