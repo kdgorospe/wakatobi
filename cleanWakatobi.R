@@ -241,6 +241,10 @@ for(i in 1:length(tmp$fishing_grnd1)){
 # sum(is.na(fishing_ground_1))
 # Create a new column for cleaned fishing ground column
 tempdat$fishing_ground_1 <- fishing_ground_1
+# assign aggregated fishing ground names
+fishing_ground_key <- read.csv("keys/fishing_grounds_key.csv")
+names(fishing_ground_key)[1] <- "fishing_ground_1"
+tempdat <- merge(tempdat,fishing_ground_key,by="fishing_ground_1",all.x=TRUE,all.y=FALSE)
 
 ### Clean fish name columns
 # Just copy and paste from first column into the second if blank or vice versa
