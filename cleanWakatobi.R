@@ -8,6 +8,7 @@
 rm(list=ls())
 library(googledrive)
 library(dplyr)
+library(tidyr)
 
 ### GET DATA AND CREATE SUMMARY TABLES
 # Download raw data files from SHERA google drive folder
@@ -259,10 +260,19 @@ for(i in 1:length(tempdat$Fish_name_p)){
   # else do nothing
 }
 
-### Check spelling of fishing grounds
-# fishing_ground_df <- data.frame(original_fg = unique(tempdat$fishing_grnd1),
-#                                 new_fg = NA)
-# write.csv(fishing_ground_df, "fishing_grounds.csv")
+# Need to cross reference names entered in the data with names in the fish key
+fish_id_key <- read.csv("keys/fish_id_key.csv")
+fish_id_key <- fish_id_key %>%
+  dplyr::select(bajau_name = Bajau.name, common_name = Common.name, family = Family, species = Genus_species, photo_ID = Photo.ID) %>%
+  mutate(bajau_name = tolower(bajau_name))
 
+temp_fish_id_key <- tempdat %>%
+  dplyr::select(bajau_name = Fish_name_p, common_name = Common_Name) %>%
+  complete(bajau_name, nesting()) %>%
+  distinct() %>%
+  mutate(bajau_name = tolower(bajau_name)) %>%
+  full_join(., fish_id_key, by="bajau_name")
+
+write.csv(temp_fish_id_key, "fish_id_key_2.csv")
 
 
