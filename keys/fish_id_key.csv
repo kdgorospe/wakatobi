@@ -1,127 +1,341 @@
-NO,Bajau name,Local name,Common name,Family,Genus_species,Photo ID,Notes,
-1,TIMBALOAH,focus ekor,Crocodile or keeltail needlefish,Belonidae,Tylosurus crocodilus,2293,C,
-2,KAROO,,Silver squirrelfish,Holocentridae,Neoniphon argenteus,2294,C,
-3,DAPA,,Humpback snapper,Lutjanidae,Lutjanus gibbus,2295,C,
-4,TINTAH,,Striped monocle bream,Nemipteridae,Scolopsis lineatus,2296,C,
-5,KEAPU CAMPUR,,Banded rock cod,Serranidae,Epinephelus fasciatus,2297,C,
-6,BABAKAL,,Blotcheye soldierfish,Holocentridae,Myripristis spp.,2298,C,
-7,MOGOH NYULUH,,Bullethead parrotfish?,Scarinae,Chlorurus spp.,2299,C,
-8,SASAGEH,,Striped large-eye bream ,Lethrinidae,Gnathodentex aureolineatus,2300,C,
-9,ULAPAI KUNIH,,Blue-barred parrotfish,Scarinae,Scarus ghobban,2301,C,
-10,BULAWWIS BIASA,,Scribbled rabbitfish,Siganidae,Siganus spinus,2302,C,
-11,KAMBULE,,Dark-banded fusilier,Caesionidae,Pterocaesio tile,2303,C,
-12,ALALAS,,Sergent major,Pomacentridae,Abudefduf vaigiensis,2304,C,
-13,BUKALANG,,Anchor tuskfish,Labridae,Choerodon anchorago,2305,C,
-14,LUPPE SIRAH,,Oriental sweetlips,Haemulidae,Plectorhinchus vittatus,2306,C,
-15,KUTAMBA,,Ornate emperor,Lethrinus,Lethrinus ornatus,2307,C,
-16,BABA,,Blackspot snapper,Lutjanidae,Lutjanus ehrenbergii,2308,C,
-17,TIMBUNGANG,,Banded goatfish,Mullidae,Parupeneus multifasciatus,2309,C,
-18,TATAPE POTE,,Chevroned butterflyfish,Chaetodontidae,Chaetodon trifascialis,2311,C,
-19,SAMBELAH,,Bearded rockling,Ophidiidae,Brotula multibarbata,2312,C,
-20,LAMBE,,Timor snapper,Lutjanidae,Lutjanus timorensis,2313,C,
-21,PELLO LOONG,,Rockmover wrasse,Labridae,Novaculichthys taeniourus,2314,C,
-22,PELLO MOGOH,,Cheek-lined wrasse,Labridae,Oxycheilinus diagrammus,2315,C,
-23,LAMPA,,Tripletail wrasse,Labridae,Cheilinus trilobatus,2316,C,
-24,PELLO SIRAH,,Gaimard wrass,Labridae,Coris gaimard,2317,C,
-25,KEKEA,,Masked rabbitfish,Siganidae,Siganus puellus,2319,C,
-26,LAMPA MIRA,,Banded wrasse,Labridae,Cheilinus fasciatus,2320,C,
-27,MOGOH LOONG,coba foto semua variasi,Parrotfish,Scarinae,Scarus spp.,2321,C,
-28,TATAPE BUNA,,Pennant bannerfish,Chaetodontidae,Heniochus chrysostomus,2322,C,
-29,DODOH,,Striped bristle-tooth,Acanthuridae,Ctenochaetus striatus,2323,C,
-30,BESEH PANGKA,,Cardinalfish,Apogonidae,Apogon spp.,2324,C,
-31,BIRRO BABI,,Small-tooth jobfish,Lutjanidae,Aphareus furca,2357,C,
-32,BANGUNTU SAMO,,,,,2356,,
-33,BANGUNTU JANGGUTANG,,,,,,,
-34,TOTOKE,,Striped large-eye bream ,Lethrinidae,Gnathodentex aureolineatus,2355,duplicate,
-35,MOGOH SIRAH,,Striped large-eye bream ,Lethrinidae,Gnathodentex aureolineatus,2355,duplicate,
-36,AHA ANG,,Red snapper,Lutjanidae,Lutjanus bohar,2350,C,
-37,BASSE PARAI,,Half-and-half wrasse,Labridae,Hemigymnus melapterus,2349,C,
-38,KUMAI,,Unicornfish,Acanthuridae,Naso unicornis,2348,C,
-39,KEAPU SIBBO,,Honeycomb rock cod,Serranidae,Epinephelus merra,2346,C,
-40,BIRRAH,,Gold-spotted rabbitfish,Siganidae,Siganus punctatus,2345,C,
-41,MANGILALA,,Titan triggerfish,Balistidae,Balistoides viridescens,2340,Photo ID was incorrect here. How do double check so that the bajau name matches the photo ID.,
-42,AMPALA,,,,Balistoides viridescens,2340,"Photo ID matches the sci name, but the common name does not match, and can't tell if this matches the bajau name. How am I to know what info is correct?",
-43,KEAPU MIRA,,Strawberry grouper,Serranidae,Cephalopholis spiloparaea,2339,C,
-44,POGO TARUSAN,,Bluetooth triggerfish,Balistidae,Odonus niger,2338,C,
-45,KEAPU SETAN,,Redmouth grouper,Serranidae,Aethaloperca rogaa,2337,C,
-46,KEAPU MIRA CAMPUR,,Coral grouper,Serranidae,Cephalopholis miniata,2336,C,
-47,INGKO KUNIH,,Yellow-tail fusilier,Caesionidae,Caesio teres,2335,C,
-48,KAMBULE NYULUH,,Gold-band fusilier,Caesionidae,Caesio caerulaureus,2334,C,
-49,TINTAH SIRAH,,Blue and yellow fusilier,Caesionidae,Caesio teres,2335,duplicate,
-50,BANSA,,Silverbelly,Gerreidae,Gerres spp.,2332,C,
-51,BONTE,,Mullet,Mugilidae,Crenimugil crenilabis,2331,C,
-52,KEAPU CAMBAH,,Vermicular trout,Serranidae,Plectropomus oligacanthus,2330,C,
-53,BAMBANGAN,,Large-eye bream,Lethrinidae,Monotaxis grandoculis,2362,C,
-54,LOMPA,,,,,2365,,
-55,DAYAH SANGAI,,Rubberlip snapper,Lutjanidae,Lutjanus rivulatus,2368,C,
-56,MOGOH BATAAN,focus ekor,Parrotfish,Scarinae,Chlorurus spp.,2369,C,
-57,MOGOH KADANGA,,Parrotfish,Scarinae,Scarus prasiognathos,2370,C,
-58,MALELAH,,Trevally,Carangidae,Caranx spp.,2378,C,
-59,SUMPA,,Emperor,Lethrinidae,Lethrinus erythropterus,2400/sumpeh lela.jpg,C,
-60,MOGOH BITTI LOONG,,Parrotfish,Scarinae,Cetoscarus bicolor,2398,C,
-61,SULAI ASAH,,Midnight snapper,Lutjanidae,Macolor macularis,2393/2394,C,
-62,BULAWWIS SILLAH,,Rabbitfish,Siganidae,Siganus argenteus,2392,C,
-63,LAUSU,,Emperor,Lethrinidae,Lethrinus olivaceus,2391,C,
-64,DAYAH MEA,,Trevally,Carangidae,Caranx melampygus,2390,C,
-65,INGKO KUNIH KAMBULE,,Fusilier,Caesionidae,Caesio cuning,2389,C,
-66,KEKEA KUNIH,,Masked rabbitfish,Siganidae,Siganus vulpinus,2396,C,
-67,BIRRAH KUNIH,,Rabbitfish,Siganidae,Siganus puellus,2395,C,
-68,KUMAI BATU,,Unicornfish,Acanthuridae,Naso spp.,2388,C,
-69,TUTUHE,,,,,2403,,
-70,BESEH LUA MATA,,Bigeye,Priacanthidae,Priacanthus blochii,1926,C,
-71,RURUMA,,Mackerel,Scombridae,Rastrelliger kanagurta,1941,C,
-72,ILA,,Drummer,Kyphosidae,Kyphosus spp.,2380,C,
-73,DAYAH NYUBBA,,Trevally,Carangidae,Caranx spp.,2379,C,
-74,KEAPU NGANTILLO,,Camouflage grouper,Serranidae,Epinephelus polyphekadion,2416,C,
-75,SUNU MIRA,,Leopard coral grouper,Serranidae,Plectropomus leopardus,2418/2417,C,
-76,BITTI GASEH,,,,,2439,,
-77,SASAGEH KUNEH,,Blue-striped snapper,Lutjanidae,Lutjanus kasmira,2437,C,
-78,MOGOH ANGKE,,Steephead parrotfish,Scarinae,Chlorurus microrhinos,2445,C,
-79,KALAMPEDA,,Margined sole,Soleidae,Synaptura marginata,2444,C,
-80,KEAPU NGALUHU,,Grouper,Serranidae,Cephalopholis spp.,2435,C,
-81,BABALAKI,,Mackerel,Scombridae,Grammatorcynus bilineatus,2433,C,
-82,GAGADIH,,,,,2432,,
-83,TABURRUH,,Yellow boxfish,Ostraciidae,Ostracion cubicus,2425,C,
-84,GUNTUR,,,,,2447,,
-85,EPE SAMO,,Scrawled filefish,Monacanthidae,Aluterus scriptus,1968,C,
-86,LAUSU KUNIH BOA,,Emperor,Lethrinidae,Lethrinus xanthochilus,2441,C,
-87,URURUH,,Rainbow runner,Carangidae,Elagatis bipinnulatus,2824,C,
-88,KEKETAH,,Triple tail,Lobotidae,Lobotus surinamensis,2836,C,
-89,PANGALUANG,,Barracuda,Sphyraenidae,Sphyraena spp.,2826,C,
-90,MOGOH POTE,,Parrotfish,Scarinae,Scarus spp.,2837,C,
-91,LAYAH,,Scad,Carangidae,Selar spp.,2901,C,
-92,POGO ROMPOH,,Triggerfish,Balistidae,Canthidermis maculatus,2899,C,
-93,DAYAH NYUBBA BUBULUH,,Blue trevally,Carangidae,Carangoides ferdau,2886,C,
-94,KEAPU BITTI,,Grouper,Serranidae,Epinephelus spp.,2879,C,
-95,TATA MBANG,,,,,2877,,
-96,KEAPU POPPOKAH,,Grouper,Serranidae,Epinephelus spp.,2868,C,
-97,PELLO POTE,,Zigzag wrasse,Labridae,Halichoeres scapularis,2867,C,
-98,TAMPAE,,Dussumier's halfbeak,Hemiramphidae,Hyporhamphus dissimieri,2861,C,
-99,EPE TARUSANG,,Scrawled filefish,Monacanthidae,Aluterus scriptus,2859,C,
-100,POGO POTE,,Blackpatch triggerfish,Balistidae,Rhinecanthus verrucosus,2858,C,
-101,ANGKE,,Bumphead parrotfish,Scarinae,Bolbometopon muricatum,2904,C,
-102,PAPALO,,Barracuda,Sphyraenidae,Sphyraena spp.,2910,C,
-103,TABUH,,,,,2917,,
-104,PALU GANDAH,,Cigar wrasse,Labridae,Cheilio inermis,2919,C,
-105,COCORENG,,Boxfish,Ostraciidae,Lactoria cornuta,2921,C,
-106,EPE POTE,,Filefish,Monacanthidae,Monacanthus spp.,2924,C,
-107,LAMBE RINGNGA,,Soldierfish,Holocentridae,Plectrypops lima,2894,C,
-108,TURINGAH,,Skipjack tuna,Scombridae,Katsuwonus pelamis,2881,C,
-109,TABURRUH SUMANGA,,Boxfish,Ostraciidae,Ostracion meleagris,2940,C,
-110,PELLO PUNSU,,Parrotfish,Scarinae,Cetoscarus bicolor,2398,C,
-111,DODOH KUNIH,,Surgeonfish,Acanthuridae,Acanthurus olivaceus,2937,C,
-112,DODOH TAMBAKO,,Surgeonfish,Acanthuridae,Zebrasoma veliferum,2935,C,
-113,DDO,,Angelfishes,Pomacanthidae,Pomacanthus imperator,2930,C,
-114,TAMPELO,,Trevally,Carangidae,Caranx spp.,3081,C,
-115,SUNU LO ONG,,Grouper,Serranidae,Plectropomus spp.,3078,C,
-116,BALLOA,,,,,3608,,
-117,AHA ANG LOONG,,Grouper,Serranidae,Plectropomus spp.,3078,C,
-118,JARAH GIGI,,Lizardfish,Synodontidae,Synodus spp.,3624,C,
-119,PELLO LANGKAU BOA,,Wrasse,Labridae,Epibulus insidiator,3579,C,
-120,KEAPU MIRRAH,,Grouper,Serranidae,Gracila albomarginata,3106,C,
-121,KEAPU BUNTAR TIKOLO,,Grouper,Serranidae,Epinephelus spp.,3104,C,
-122,AHAANG DAPA,,Red snapper,Lutjanidae,Lutjanus bohar,3095,C,
-123,LANGSURA,,Black-banded snapper,Lutjanidae,Lutjanus decussatus,3092,C,
-124,BANGARAU,,Snapper,Lutjanidae,Lutjanus semicinctus,3089,C,
-124,turisan,,Wavy-lined grouper,,Symphorichthys spilurus,turisan.jpg,,
-124,Keapu kubah,,,,Epinephelus undulosus,keapu_kubah,,
+bajau_name,common_name.x,common_name.y,family,species,photo_ID,status
+agogos,raggedtooth parrotfish,parrotfish,Scarinae,Calotomus spp.,8541,Sept bright moon/Parjono (bad pic)
+aha ang,red snapper,Red snapper,Lutjanidae,Lutjanus bohar,8543,Sept bright moon/Mustamin
+ahaang,red snapper,Red snapper,Lutjanidae,Lutjanus bohar,8543,Sept bright moon/Mustamin
+alalas,damselfish,Sergent major,Pomacentridae,Abudefduf vaigiensis,7160,June dark moon/Irwan
+alalas nyuloh,damselfish,damselfish,Pomacentridae,Pomacentrus spp.,9138,Nov dark moon/Bagon
+ampala,Titan triggerfish,titan triggerfish,Balistidae,Balistoides viridescens,8982,Oct bright moon/Asiri
+ampala,Titan triggerfish,titan triggerfish,Balistidae,Balistoides viridescens,8982,Oct bright moon/Asiri
+ampala,Titan triggerfish,titan triggerfish,Balistidae,Balistoides viridescens,8982,Oct bright moon/Asiri
+andupeng,emperor,emperor,Lethrinidae,Lethrinus ornatus,7431,July dark moon/Jumatia
+anggata,NA,NA,NA,NA,0,April bright moon/Mbili
+angke,Bumphead parrotfish,Bumphead parrotfish,Scarinae,Bolbometopon muricatum,9076,Nov dark moon/Dahlan
+baba,Onesport snapper,Blackspot snapper,Lutjanidae,Lutjanus ehrenbergii,2308,Sept bright moon/Sisun; photoID 8580
+baba mira,Onesport snapper,Blackspot snapper,Lutjanidae,Lutjanus spp.,0,C
+baba sirah kuneh,Onesport snapper,Blackspot snapper,Lutjanidae,Lutjanus spp.,0,C
+babakal,Blotcheye soldierfish,Blotcheye soldierfish,Holocentridae,Myripristis spp.,8607,Sept bright moon/Lili
+bagangan,Humpnose bigeye bream,bream,Lethrinidae,Monotaxis grandoculis,8555,Sept bright moon/Alwin
+bagangang,Humpnose bigeye bream,bream,Lethrinidae,Monotaxis grandoculis,8555,Sept bright moon/Alwin
+balomboh,small sardine,NA,NA,NA,0,no need
+balubba,goatfish,goatfish,Mullidae,Parupeneus spp.,8579,Sept bright moon/Sisun; photoID 8579
+balubba rambongang,goatfish,goatfish,Mullidae,Upeneus vittatus,7158,June dark moon/Mardi
+bangaong,Unknown,NA,NA,NA,NA,
+bangarda,Chequered snapper,Snapper,Lutjanidae,Lutjanus decussatus,4819,Jan dark moon/Mardi
+banguntu,parrotfish,parrotfish,Scarinae,Leptoscarus vaigiensis,5966,March dark moon/Talo
+banguntu parai,jobfish,NA,NA,NA,NA,
+banguntu samo,parrotfish,parrotfish,Scarinae,Leptoscarus vaigiensis,5375,Feb dark moon/Tomi
+bansa,silverbiddy,Silverbelly,Gerreidae,Gerres spp.,2332,no need
+bansa tabali,silverbiddy,NA,NA,NA,0,no need
+basse,Unknown,NA,NA,NA,NA,
+basse parai,wrasse,Half-and-half wrasse,Labridae,Hemigymnus melapterus,8718,Oct dark moon/Sair
+berani,smaller trevally,NA,NA,NA,0,
+bese,cardinalfish,cardinalfish,Apogonidae,Cheilodipterus spp.,0,
+beseh,cardinalfish,cardinalfish,Apogonidae,Cheilodipterus spp.,7176,June dark moon/Irwan
+beseh garas,NA,NA,NA,NA,NA,
+beseh lua mata,bigeye,bigeye,Priacanthidae,Priacanthus blochii,8603,Sept bright moon/Lili
+beseh mira,NA,NA,NA,NA,NA,
+birah saloka,rabbitfish,NA,NA,Siganus spp.,0,
+birrah,rabbitfish,Gold-spotted rabbitfish,Siganidae,Siganus punctatus,8935,Oct bright moon/Alwin
+birro,Aphareus furca,NA,NA,NA,0,
+birro babi,Aphareus furca,Small-tooth jobfish,Lutjanidae,Aphareus furca,2357,
+bokko,Yellowtail scad,scad,Carangidae,Atule mate,7168,June dark moon/Irwan
+bokko,Yellowtail scad,scad,Carangidae,Atule mate,7168,June dark moon/Irwan
+bukalang,Anchor tuskfish,Anchor tuskfish,Labridae,Choerodon anchorago,8709,Oct dark moon/Udin
+bulawwis,rabbitfish,Rabbitfish,Siganidae,Siganus spp.,8540,Sept bright moon/Parjono (bad pic)
+bulawwis karangan,rabbitfish,Rabbitfish,Siganidae,Siganus spinus,8960,Oct bright moon/Dahalang
+bulawwis sillah,rabbitfish,Rabbitfish,Siganidae,Siganus argenteus,8708,Oct dark moon/Udin
+bulealang,Bulealang,Anchor tuskfish,Labridae,Choerodon anchorago,8640,Sept bright moon/Unyil.pdf; photoID 8640; I think this entry matches the name
+buna,batfish,batfish,Ephippidae,Platax spp.,8939,Oct bright moon/Bagong
+buna sirah kunih,NA,NA,NA,NA,NA,
+buna tatape,Moorish idol,moorish idol,Zanclidae,Zanclus cornutus,6505,April dark moon/Super
+cocoreng,Cocoreng,Boxfish,Ostraciidae,Lactoria cornuta,8832,Oct brigh moon/Utee
+dapa,paddletail snapper,Humpback snapper,Lutjanidae,Lutjanus gibbus,8597,Sept bright moon/Aco
+dapa sumu,paddletail snapper,Humpback snapper,Lutjanidae,Lutjanus gibbus,0,
+dapa sumu,paddletail snapper Sumu,Humpback snapper,Lutjanidae,Lutjanus gibbus,0,
+dayah,Trevally,Trevally,Carangidae,Caranx spp.,8643,Sept bright moon/Unyil.pdf
+dayah berani,Trevally,Trevally,Carangidae,Caranx spp.,7619,July bright moon/Bagon
+dayah buaya,Trevally,Trevally,Carangidae,Caranx spp.,0,
+dayah mea,Trevally,Trevally,Carangidae,Caranx melampygus,2390,Sept brigh moon/Sisun; photoID 8582
+dayah nyubba,trevally,Trevally,Carangidae,Caranx spp.,2379,Sept brigh moon/Sisun; photoID 8583
+dayah nyubba,trevally,Trevally,Carangidae,Caranx spp.,2379,Sept brigh moon/Sisun; photoID 8584
+dayah nyubba,Trevally,Trevally,Carangidae,Caranx spp.,2379,Sept brigh moon/Sisun; photoID 8585
+dayah nyubba langoang,trevally,Trevally,Carangidae,Caranx spp.,0,
+dayah nyubba nyuluh,trevally,Trevally,Carangidae,Caranx spp.,4871,Jan dark moon/Musair
+dayah tana,Dayah Tana,NA,NA,NA,0,
+dodoh,Surgeonfish,surgeonfish,Acanthuridae,Acanthurus spp.,8672,Sept bright moon/Asiri
+dodoh alo,Surgeonfish,surgeonfish,Acanthuridae,Acanthurus auranticavus,6670,April bright moon/Musair
+dodoh batu,Surgeonfish,bristle-tooth,Acanthuridae,Ctenochaetus spp.,8968,Oct bright moon/Dahalang
+dodoh sirah mira,Surgeonfish,surgeonfish,Acanthuridae,Acanthurus olivaceus,7669,July bright moon/Mbili
+dodoh tambelo,Surgeonfish,surgeonfish,Acanthuridae,Acanthurus lineatus,8909,Oct bright moon/Gaos2
+ekor kuning,Caseio spp,fusilier,Caesionidae,Caesio cuning,6064,March dark moon/Ardin
+epe,scrawled filefish,Scrawled filefish,Monacanthidae,Aluterus scriptus,8534,Sept bright moon/Parjono
+epe sammo,Filefish,Scrawled filefish,Monacanthidae,Aluterus scriptus,5986,March dark moon/Parjono
+guntor,jobfish,jobfish,Lutjanidae,Aprion virescens,9120,Nov dark moon/Siddeng
+guntur,jobfish,jobfish,Lutjanidae,Aprion virescens,7487,July dark moon/Imaduding
+gurisa,pufferfish,puffer,Tetraodontidae,Arothron spp.,6030,March dark moon/Siddeng
+ila,Chub,Drummer,Kyphosidae,Kyphosus spp.,8590,Sept bright moon/Aco
+ingko kunih,Caseio spp,Yellow-tail fusilier,Caesionidae,Caesio cuning,2335,
+jarah gigi,Lizardfish,Lizardfish,Synodontidae,Synodus spp.,6119,March bright moon/Irwan
+kalabutan,NA,NA,NA,NA,NA,
+kalempeda,Margined sole,,,,5766,no need - Feb bright moon/Judor
+kalombe,blue trevally,Trevally,Carangidae,Caranx spp.,4870,Jan dark moon/Musair
+kambule,dark-banded fusilier,Dark-banded fusilier,Caesionidae,Pterocaesio tile,8522,Sept bright moon/Acong
+karo'o,squirrelfish,Silver squirrelfish,Holocentridae,Neoniphon argenteus,8691,Oct dark moon/Mbili
+keapu,Grouper,NA,NA,Epinephelus spp.,NA,
+keapu bandoka,Grouper,grouper,Serranidae,Cephalopholis argus,9013,Nov dark moon/Aranong
+keapu biasa,Grouper,grouper,Serranidae,Epinephelus spilotoceps,9515,Dec bright moon/Aco
+keapu bite nyuloh,Grouper,grouper,Serranidae,Cephalopholis argus,9307,Dec dark moon/Isal
+keapu bitte loong,Grouper,NA,NA,NA,NA,
+keapu bitte mira,Grouper,grouper,Serranidae,Cephalopholis miniata,9012,Nov dark moon/Aranong
+keapu bitte tibbo,Grouper,grouper,Serranidae,Epinephelus spilotoceps,8599,Sept bright moon/Aco
+keapu buntar tikolo,Grouper,grouper,Serranidae,Epinephelus spp.,8694,Oct dark moon/La kea
+keapu cambal,Grouper,grouper,Serranidae,Plectropomus oligacanthus,6281,March bright moon/Hartono
+keapu campur,Grouper,grouper,Serranidae,Cephalopholis argus,6212,March bright moon/Siddeng
+keapu campuran ngeluhu,Grouper,NA,NA,NA,NA,
+keapu coklat,Grouper,grouper,Serranidae,Cephalopholis spp.,6235,March bright moon/Ita
+keapu garas,Grouper,grouper,Serranidae,Epinephelus merra,6219,March bright moon/Siddeng
+keapu goas,Grouper,NA,NA,NA,NA,
+keapu kuali,Grouper,grouper,Serranidae,Cephalopholis polleni,9171,Nov bright moon/Ubi
+keapu loong,Grouper,grouper,Serranidae,Cephalopholis argus,8646,Sept bright moon/Unyil - they also use this name for cephalopholis argus (below)
+keapu loong ngaluhu,Grouper,grouper,Serranidae,Epinephelus ongus,8564,Sept bright moon/Arenong
+keapu malang,Grouper,grouper,Serranidae,Epinephelus spp.,5981,March dark moon/Amis
+keapu merah campura,Grouper,grouper,Serranidae,Cephalopholis miniata,5727,Feb bright moon/Hartono
+keapu mira,Grouper,Strawberry grouper,Serranidae,Cephalopholis spiloparaea,2339,
+keapu mira bitti,Grouper,grouper,Serranidae,Cephalopholis miniata,5238,Jan bright moon/Iming
+keapu mira sibbo,Grouper,grouper,Serranidae,Epinephelus fasciatus,9211,Nov bright moon/Arenong
+keapu ngaluhu,Grouper,Grouper,Serranidae,Epinephelus spp.,8737,Oct dark moon/Kandar
+keapu nyarengelah,Grouper,grouper,Serranidae,Epinephelus spp.,5239,Jan bright moon/Iming
+keapu nyarengkeh,Grouper,grouper,Serranidae,Epinephelus spp.,0,
+keapu poppokah,Grouper,Grouper,Serranidae,Epinephelus spp.,8844,Oct bright moon/May
+keapu pote,Grouper,grouper,Serranidae,Epinephelus undulosus,6412,April dark moon/Arenong
+keapu sabit,Grouper,NA,NA,NA,NA,
+keapu setan,Grouper,Redmouth grouper,Serranidae,Aethaloperca rogaa,8757,Oct dark moon/Laheni
+keapu sibbo,Grouper,Honeycomb rock cod,Serranidae,Epinephelus merra,8554,Sept bright moon/Alwin
+keapu sibbo mirah,Grouper,Blacktip grouper,Serranidae,Epinephelus fasciatus,8528,Sept bright moon/Acong
+keapu tallah,Grouper,grouper,Serranidae,Anyperodon leucogrammicus,8764,Oct dark moon/Arenong
+keapu tiger,Grouper,grouper,Serranidae,Epinephelus polyphekadion,8763,Oct dark moon/Arenong
+keapu tongko,Grouper,grouper,Serranidae,Epinephelus spp.,8542,Sept bright moon/Mustamin
+kekea,rabbitfish,rabbitfish,Siganidae,Siganus spp.,2319,Sept bright moon/Unyil.pdf; photoID 8642
+kekea kuneh,foxface rabbitfish,rabbitfish,Siganidar,Siganus vulpinus,6355,April dark moon/Sair
+kekea langkau boa,foxface rabbitfish,rabbitfish,Siganidae,Siganus vulpinus,7296,June bright moon/Agus
+keyba,NA,NA,NA,NA,NA,
+kokoreh,Crescent grunter,grunter,Terapontidae,Terapon spp.,5758,Feb bright moon/Mardi
+kongkeh,porcupinefish,porcupinefish,Diodontidae,Diodon liturosus,6285,March bright moon/Lilli
+kumai,unicornfish,Unicornfish,Acanthuridae,Naso unicornis,9141,Nov dark moon/Bagon
+kumai batu,unicornfish,Unicornfish,Acanthuridae,Naso spp.,9107,Nov dark moon/Siddeng
+kumai sillah,unicornfish,Unicornfish,Acanthuridae,Naso vlamingii,6469,April dark moon/Dahlan
+kumai tapesu,unicornfish,Unicornfish,Acanthuridae,Naso unicornis,6154,March bright moon/Dahalang
+kumai tarusan,unicornfish,Unicornfish,Acanthuridae,Naso spp.,6036,March dark moon/Siddeng
+kumai ungko kuneh,unicornfish,Unicornfish,Acanthuridae,Naso lituratus,9009,Nov dark moon/Arsan
+kumai ungko mira,unicornfish,Unicornfish,Acanthuridae,Naso lituratus,9374,Dec dark moon/Dahalang
+kumbah buaya,crocodile flathead,flathead,Platycephalidae,NA,4814,no need - Jan dark moon/Mardi
+kurus bali,NA,NA,NA,NA,NA,
+kutamba,emperor,Ornate emperor,Lethrinidae,Lethrinus ornatus,2307,Sept bright moon/Parjono; photoID 8536
+kutamba bannah,emperor,emperor,Lethrinidae,Lethrinus erythropterus,8645,Sept bright moon/Unyil
+kutamba mantirus,emperor,emperor,Lethrinidae,Lethrinus nebulosus,7148,June dark moon/Mardi
+kutamba sumpa,emperor,emperor,Lethrinidae,Lethrinus spp.,0,
+kutu,Yellowlip emperor,emperor,Lethrinidae,Lethrinus xanthochilus,6478,April dark moon/Dahlan
+lambe,squirrelfish,squirrelfish,Holocentridae,Sargocentron spp.,2313,"photoID - 8639 was identified as lambe, but it is a soldierfish; Sep bright moon/Sisun photoID - 8581; confirmed also use this name for soldierfish in Sept bright moon/Alwin"
+lampa,Tripletail wrasse,Tripletail wrasse,Labridae,Cheilinus trilobatus,8745,Oct dark moon/Laheni
+lampa dosa,Tripletail wrasse,Tripletail wrasse,Labridae,Cheilinus fasciatus,8521,Sept bright moon/Acong
+lampa loong,wrasse,wrasse,Labridae,Epibulus insidiator,8703,Oct dark moon/Udin
+lampa mira,Tripletail wrasse,Banded wrasse,Labridae,Cheilinus fasciatus,8665,Sept bright moon/Asiri
+lampa pello,Tripletail wrasse,wrasse,Labridae,Cheilinus trilobatus,6649,April bright moon/Ganing
+lampa sirah mira,Tripletail wrasse,wrasse,Labridae,Cheilinus fasciatus,9083,Nov dark moon/Dahlan
+lampa ungko mira,Tripletail wrasse,wrasse,Labridae,Cheilinus fasciatus,0,
+lamudo,Longspine emporer,NA,NA,NA,NA,
+langkoe,Napolean wrasse,wrasse,Labridae,Cheilinus undulatus,5307,Feb dark moon/Heri
+langoang,bluefin trevally,trevally,Carangidae,Caranx melampygus,8765,Oct dark moon/Parjono
+lansura,snapper,snapper,Lutjanidae,Lutjanus carponotatus,8731,Oct dark moon/Sair
+lausu,emperor,emperor,Lethrinidae,Lethrinus xanthochilus,8566,Sept bright moon/Arenong
+lausu kutu,Longface emporer,emperor,Lethrinidae,Lethrinus xanthochilus,5953,March dark moon/Siddeng-1
+lausu langkau boa,Longface emporer,empera,Lethrinidae,Lethrinus olivaceus,6477,April dark moon/Dahlan
+lausu tubbal boa,Longface emporer,emperor,Lethrinidae,Lethrinus olivaceus,6450,"April dark moon/Dahlan - this fish was ID as L. xan., but they tend to use names for L. xan. And L. oli interchangeably"
+leppe kuneh boa,NA,NA,NA,NA,NA,
+luppe,sweetlip,sweetlip,Haemulidae,Plectorhinchus spp.,8864,Oct bright moon/Mbili
+luppe bitikan,Striped sweetlips,sweetlip,Haemulidae,Plectorhinchus spp.,8849,Oct bright moon/May
+luppe bitti,Striped sweetlips,sweetlip,Haemulidae,Plectorhinchus spp.,8601,Sept bright moon/Aco
+luppe hias,Striped sweetlips,sweetlip,Haemulidae,Plectorhinchus spp.,8681,Oct dark moon/Ganing
+luppe kunih,Striped sweetlips,sweetlip,Haemulidae,Plectorhinchus spp.,8756,Oct dark moon/Laheni
+luppe sirah,Striped sweetlips,Oriental sweetlips,Haemulidae,Plectorhinchus vittatus,2306,
+luppe tubbal boa,Striped sweetlips,sweetlip,Haemulidae,Plectorhinchus chaetodonoides,5616,Feb bright moon/Musair
+malelah,surgeonfish,surgeonfish,Acanthuridae,Acanthurus mata,9110,Nov dark moon/Siddeng
+mangali,NA,NA,NA,NA,NA,
+mangilala,rabbitfish,rabbitfish,Siganidae,Siganus punctatus,8587,Sept bright moon/Lili
+mangilala kuneh,rabbitfish,rabbitfish,Siganidae,Siganus spp.,8611,Sept bright moon/Lili
+mogoh,parrotfish,Parrotfish,Scarinae,Scarus spp.,0,
+mogoh angke,parrotfish,Bumphead parrotfish,Scarinae,Bolbometopon muricatum,6679,April bright moon/Lahenni
+mogoh angke,steephead parrotfish,Steephead parrotfish,Scarinae,Chlorurus microrhinos,2445,
+mogoh bataan,parrotfish,Parrotfish,Scarinae,Chlorurus spp.,9104,Nov dark moon/Siddeng
+mogoh batu,parrotfish,Parrotfish,Scarinae,Scarus ghobban,8620,Sept bright moon/Dahalang
+mogoh birrah,parrotfish,Parrotfish,Scarinae,Cetoscarus bicolor,8612,Sept brigh moon/Lili
+mogoh coklat,parrotfish,Parrotfish,Scarinae,Chlorurus spp.,8842,Oct bright moon/May
+mogoh hangilo,parrotfish,NA,NA,NA,NA,
+mogoh hanyulu,parrotfish,Parrotfish,Scarinae,Chlorurus spp.,6018,March dark moon/Saiful
+mogoh hijau,parrotfish,NA,NA,NA,NA,
+mogoh kunih,parrotfish,Parrotfish,Scarinae,Scarus ghobban,5653,Feb bright moon/Dahalang
+mogoh loong,parrotfish,Parrotfish,Scarinae,Scarus niger,8610,Sept brigh moon/Lili
+mogoh mira,parrotfish,NA,NA,NA,NA,
+mogoh mondo,parrotfish,Parrotfish,Scarinae,Calotomus carolinus,8705,Oct dark moon/Udin
+mogoh mondo bitte,parrotfish,Parrotfish,Scarinae,Calotomus carolinus,6483,April dark moon/Dahlan
+mogoh nyulloh,parrotfish,Parrotfish,Scarinae,Chlorurus spp.,8556,Sept bright moon/Alwin
+mogoh pote,parrotfish,Parrotfish,Scarinae,Scarus spp.,2837,
+mogoh sirah pote,parrotfish,Parrotfish,Scarinae,Scarus dimidiatus,8557,Sept bright moon/Alwin
+opa,NA,NA,NA,NA,NA,
+palugandah,wrasse,wrasse,Labridae,Cheilo inermis,8779,Oct dark moon/Parjono
+pangaluang,Great barracuda,Barracuda,Sphyraenidae,Sphyraena spp.,6453,April dark moon/Dahlan
+papalo,Barracuda,Barracuda,Sphyraenidae,Sphyraena spp.,8930,Oct bright moon/Alwin
+pello,wrasse,wrasse,Labridae,Halichoeres hortulanus,7181,June dark moon/Irwan
+pello gusoh,wrasse,NA,NA,NA,NA,
+pello koncang,wrasse,wrasse,Labridae,Hemigymnus melapterus,4896,Jan dark moon/Musair
+pello lampa,wrasse,wrasse,Labridae,Oxycheilinus diagrammus,8725,Oct dark moon/Sair
+pello langkau boa,wrasse,Wrasse,Labridae,Epibulus insidiator,6381,April dark moon/Acong
+pello mira,wrasse,NA,NA,NA,NA,
+pello nyuluh,wrasse,NA,NA,NA,NA,
+pello pungsu,wrasse,wrasse,Labridae,Hemigymnus melapterus,8667,Sept bright moon/Asiri; tough to read the name on the hard copy
+pello sirah,wrasse,Gaimard wrass,Labridae,Coris gaimard,6193,March bright moon/Siddeng
+pello sirah pote,wrasse,wrasse,Labridae,Hemigymnus melapterus,6430,April dark moon/Lahenni
+pello sirip kunih,wrasse,wrasse,Labridae,Coris gaimard,6748,April bright moon/Dahalang
+pepedo,NA,NA,NA,NA,NA,
+pesari,NA,NA,NA,NA,NA,
+pilangan,Halfbeak,halfbeak,Hemiramphidae,NA,7485,July dark moon/Imaduding
+pilangang,Halfbeak,halfbeak,Hemiramphidae,NA,7485,July dark moon/Imaduding
+pipili,Trevally,trevally,Carangidae,Caranx spp.,8966,Oct bright moon/Dahalang
+pogo,Triggerfish,Triggerfish,Balistidae,Balistapus undulatus,4849,Jan dark moon/Saiful
+pogo epe,Triggerfish,NA,NA,NA,NA,
+pogo hitam,Triggerfish,Triggerfish,Balistidae,Balistapus undulatus,5991,March dark moon/Parjono
+pogo karupu,Triggerfish,black triggerfish,Balistidae,Melichthys niger,9010,Nov dark moon/Arsan
+pogo loong,Triggerfish,black triggerfish,Balistidae,Melichthys niger,7541,July dark moon/Siddeng2
+pogo mayor,Triggerfish,NA,NA,NA,NA,
+pogo mira,Triggerfish,Triggerfish,Balistidae,Balistapus undulatus,8916,Oct bright moon/Gaos2
+pogo ngisirah,Triggerfish,NA,NA,NA,NA,
+pogo pote,Triggerfish,Blackpatch triggerfish,Balistidae,Rhinecanthus verrucosus,6140,March bright moon/Tallala
+pogo punsu,Triggerfish,NA,NA,NA,NA,
+pogo sirah,Triggerfish,Triggerfish,Balistidae,Balistapus undulatus,5944,March dark moon/Babo
+pogo tarusan,Triggerfish,Bluetooth triggerfish,Balistidae,Odonus niger,7180,June dark moon/Irwan
+popogo,Triggerfish,NA,NA,NA,NA,
+pote,NA,NA,NA,NA,7339,no need - July dark moon/Arsan
+rambeng,Neon fusilier,Fusilier,Caesionidae,Caesio lunaris,9324,Dec dark moon/Juro
+rambeng ungko kuneh,Neon fusilier,Fusilier,Caesionidae,Caesio lunaris,0,
+ruruma,Rainbow fusilier,Mackerel,Scombridae,Rastrelliger kanagurta,7159,June dark moon/Irwan
+sampeh lea,snapper,snapper,Lutjanidae,Lutjanus spp.,9144,Nov bright moon/Syahrir
+sasageh,Striped large-eye bream,Striped large-eye bream ,Lethrinidae,Gnathodentex aureolineatus,8761,Oct dark moon/Bagon
+sasageh kuneh,Striped large-eye bream,Blue-striped snapper,Lutjanidae,Lutjanus kasmira,2437,
+sualalah,monocle bream,monocle bream,Nemipteridae,Scolopsis spp.,8641,Sept bright moon/Unyil.pdf
+sulai asah,Midnight snapper,Midnight snapper,Lutjanidae,Macolor macularis,6118,March bright moon/Irwan
+sumpa,Lethrinus spp,Emperor,Lethrinidae,Lethrinus erythropterus,8591,Sept bright moon/Aco
+sumpa bannah,Lethrinus spp,Emperor,Lethrinidae,Lethrinus spp.,0,
+sumpah lelah,Lethrinus spp,Emperor,Lethrinidae,Lethrinus spp.,0,
+sumpeh,NA,NA,NA,NA,NA,
+sunu,Grouper,grouper,Serranidae,Plectropomus spp.,0,
+sunu balia,Grouper,grouper,Serranidae,Epinephelus spp.,9467,Dec bright moon/Dinar
+sunu cambah,grouper,grouper,Serranidae,Plectropomus oligacanthus,8548,Sept bright moon/Jura
+sunu cambah loong,Grouper,grouper,Serranidae,Plectropomus oligacanthus,5729,Feb bright moon/Mustamin
+sunu coklat,Grouper,grouper,Serranidae,,NA,
+sunu hitam,Grouper,grouper,Serranidae,Plectropomus leopardus,6434,April dark moon/Lahenni
+sunu loong,Grouper,grouper,Serranidae,Cephalopholis spp.,6067,March dark moon/Ardin
+sunu mira,Grouper,Leopard coral grouper,Serranidae,Plectropomus leopardus,8546,Sept bright moon/Jura
+sunu tallah,Grouper,grouper,Serranidae,Anyperodon leucogrammicus,9465,Dec bright moon/Dinar
+taboh,NA,NA,NA,NA,7337,no need - July dark moon/Arsan
+taburoh,Boxfish,boxfish,Ostraciidae,Ostracion spp.,8980,Oct bright moon/Asiri
+talunsu,NA,NA,NA,NA,NA,
+tambiro,Emperor,Emperor,Lethrinidae,Lethrinus spp.,8559,Sept bright moon/Alwin
+tambiro alus,Emperor,Emperor,Lethrinidae,Lethrinus spp.,0,
+tape,NA,NA,NA,NA,NA,
+tarigongoh,NA,NA,NA,NA,NA,
+taringan,grouper,grouper,Serranidae,Variola louti,8533,Sept bright moon/Hartono
+taringan loong,Variola louti,grouper,Serranidae,Variola louti,6489,April dark moon/Lahati
+tatape,Moorish idol,moorish idol,Zanclidae,Zanclus cornutus,8775,Oct dark moon/Parjono
+tatape bulan,Butterfly fish,butterflyfish,Chaetodontidae,Chaetodon ephippium,5684,Feb bright moon/Dahalang
+tatape buna,Moorish idol,moorish idol,Zanclidae,Zanclus cornutus,8775,Oct dark moon/Parjono
+tatape dodoh,big batfish,NA,NA,NA,NA,
+tatape kuneh,Butterfly fish,butterflyfish,Chaetodontidae,Forcipiger spp.,7172,June dark moon/Irwan
+tatape sirah,bannerfish,bannerfish,Chaetodontidae,Heniochus chrysostomus,7174,June dark moon/Irwan
+tatatape,Moorish idol,moorish idol,Zanclidae,Zanclus cornutus,0,
+tengiri,Narrow-barred Spanish mackerel,NA,NA,NA,7456,July dark moon/Mustamin
+tibbo,Damselfish,damselfish,Pomacentridae,Pomacentrus spp.,8569,Sept bright moon/Alwin
+tibo pote,Damselfish,damselfish,Pomacentridae,Dischistodus perspicillatus,6737,April bright moon/Kina
+timbaloah,Crocodile or keeltail needlefish,Crocodile or keeltail needlefish,Belonidae,Tylosurus crocodilus,7162,June dark moon/Irwan
+timbungan,goatfish,goatfish,Mullidae,Parupeneus spp.,8636,Sept bright moon/Unyil
+timbungan garas,manybar goatfish,goatfish,Mullidae,Parupeneus barberinoides,6648,April bright moon/Ganing
+timbungan janggutan,manybar goatfish,goatfish,Mullidae,Parupeneus spp.,0,
+timbungan mira,manybar goatfish,goatfish,Mullidae,Parupeneus spp.,5785,Feb bright moon/Harjana
+timbungan rambayan,manybar goatfish,goatfish,Mullidae,Upeneus vittatus,8678,Oct dark moon/Ganing
+timbungan sanio,manybar goatfish,goatfish,Mullidae,Upeneus vittatus,5744,Feb bright moon/Arsan
+timbungan sirah,goatfish,goatfish,Mullidae,Parupeneus barberinoides,7195,June dark moon/Dendi
+timbungang,manybar goatfish,Banded goatfish,Mullidae,Parupeneus multifasciatus,2309,
+tintah,Threeline monocle bream,Striped monocle bream,Nemipteridae,Scolopsis spp.,8527,Sept bright moon/Acong
+tintah tarusan,Threeline monocle bream,monocle bream,Nemipteridae,Scolopsis spp.,6089,March dark moon/Lamini
+tittingan,Stripped eel catfish,NA,NA,NA,6645,no need - April bright moon/Ganing
+tomiga,NA,NA,NA,NA,NA,
+tonggol,Pelagic,NA,NA,NA,NA,
+totoke,bream,Striped large-eye bream ,Lethrinidae,Gnathodentex aureolineatus,9147,Nov bright moon/Syahrir - not a very good picture
+tubbal boa,Harlequin sweetlips,NA,NA,NA,NA,
+tuna bambulo,Pelagic,NA,NA,NA,NA,
+turisan,sailfin snapper,sailfin snapper,Lutjanidae,Symphorichthys spilurus,5617,Feb bright moon/Musair
+turisang,sailfin snapper,sailfin snapper,Lutjanidae,Symphorichthys spilurus,0,
+ulapai,Parrotfish,Parrotfish,Scarinae,Scarus spp.,8644,Sept bright moon/Unyil
+ulapai coklat,Parrotfish,NA,NA,NA,NA,
+ulapai mira,Parrotfish,NA,NA,NA,NA,
+ulapai patoh,Parrotfish,NA,NA,NA,NA,
+ururuh,Rainbow runner,Rainbow runner,Carangidae,Elagatis bipinnulatus,7463,July dark moon/Dinar
+karoo,squirrelfish,Silver squirrelfish,Holocentridae,Neoniphon argenteus,8691,Oct dark moon/Mbili
+mogoh nyuluh,bullethead parrotfish,bullethead parrotfish,Scarinae,Chlorurus spp.,2299/8637,
+ulapai kunih,NA,Blue-barred parrotfish,Scarinae,Scarus ghobban,2301,
+bulawwis biasa,NA,Scribbled rabbitfish,Siganidae,Siganus spinus,2302,
+tatape pote,NA,Chevroned butterflyfish,Chaetodontidae,Chaetodon trifascialis,2311,
+sambelah,NA,Bearded rockling,Ophidiidae,Brotula multibarbata,2312,
+pello loong,NA,Rockmover wrasse,Labridae,Novaculichthys taeniourus,2314,
+pello mogoh,NA,Cheek-lined wrasse,Labridae,Oxycheilinus diagrammus,2315,
+beseh pangka,NA,Cardinalfish,Apogonidae,Apogon spp.,2324,
+banguntu janggutang,NA,,,,,
+mogoh sirah,NA,Striped large-eye bream ,Lethrinidae,Gnathodentex aureolineatus,2355,
+keapu mira campur,NA,Coral grouper,Serranidae,Cephalopholis miniata,2336,
+kambule nyuluh,NA,Gold-band fusilier,Caesionidae,Caesio caerulaureus,2334,
+tintah sirah,NA,Blue and yellow fusilier,Caesionidae,Caesio teres,2335,
+keapu cambah,NA,Vermicular trout,Serranidae,Plectropomus oligacanthus,2330,
+bambangan,NA,Large-eye bream,Lethrinidae,Monotaxis grandoculis,2362,
+lompa,NA,,,,2365,
+dayah sangai,NA,Rubberlip snapper,Lutjanidae,Lutjanus rivulatus,2368,
+mogoh kadanga,NA,Parrotfish,Scarinae,Scarus prasiognathos,2370,
+mogoh bitti loong,NA,Parrotfish,Scarinae,Cetoscarus bicolor,2398,
+ingko kunih kambule,NA,Fusilier,Caesionidae,Caesio cuning,2389,
+kekea kunih,NA,Masked rabbitfish,Siganidae,Siganus vulpinus,2396,
+birrah kunih,NA,Rabbitfish,Siganidae,Siganus puellus,2395,
+tutuhe,NA,,,,2403,
+keapu ngantillo,grouper,grouper,Serranidae,Epinephelus spp.,2416,
+bitti gaseh,NA,,,,2439,
+kalampeda,sole,Margined sole,Soleidae,Synaptura marginata,2444,
+babalaki,NA,Mackerel,Scombridae,Grammatorcynus bilineatus,2433,
+gagadih,NA,,,,2432,
+taburruh,NA,Yellow boxfish,Ostraciidae,Ostracion cubicus,2425,
+epe samo,NA,Scrawled filefish,Monacanthidae,Aluterus scriptus,1968,
+lausu kunih boa,NA,Emperor,Lethrinidae,Lethrinus xanthochilus,2441,
+keketah,NA,Triple tail,Lobotidae,Lobotus surinamensis,2836,
+layah,NA,Scad,Carangidae,Selar spp.,2901,
+pogo rompoh,NA,Triggerfish,Balistidae,Canthidermis maculatus,2899,
+dayah nyubba bubuluh,NA,Blue trevally,Carangidae,Carangoides ferdau,2886,
+keapu bitti,NA,Grouper,Serranidae,Epinephelus spp.,2879,
+tata mbang,NA,,,,2877,
+pello pote,NA,Zigzag wrasse,Labridae,Halichoeres scapularis,2867,
+tampae,NA,Dussumier's halfbeak,Hemiramphidae,Hyporhamphus dissimieri,2861,
+epe tarusang,NA,Scrawled filefish,Monacanthidae,Aluterus scriptus,2859,
+tabuh,NA,,,,2917,
+palu gandah,NA,Cigar wrasse,Labridae,Cheilio inermis,2919,
+epe pote,NA,Filefish,Monacanthidae,Monacanthus spp.,2924,
+lambe ringnga,NA,Soldierfish,Holocentridae,Plectrypops lima,2894,
+turingah,NA,Skipjack tuna,Scombridae,Katsuwonus pelamis,2881,
+taburruh sumanga,NA,Boxfish,Ostraciidae,Ostracion meleagris,2940,
+pello punsu,NA,Parrotfish,Scarinae,Cetoscarus bicolor,2398,
+dodoh kunih,NA,Surgeonfish,Acanthuridae,Acanthurus olivaceus,2937,
+dodoh tambako,NA,Surgeonfish,Acanthuridae,Zebrasoma veliferum,2935,
+ddo,NA,Angelfishes,Pomacanthidae,Pomacanthus imperator,2930,
+tampelo,NA,Trevally,Carangidae,Caranx spp.,3081,
+sunu lo ong,NA,Grouper,Serranidae,Plectropomus spp.,3078,
+balloa,NA,,,,3608,
+aha ang loong,NA,Grouper,Serranidae,Plectropomus spp.,3078,
+keapu mirrah,NA,Grouper,Serranidae,Gracila albomarginata,3106,
+ahaang dapa,NA,Red snapper,Lutjanidae,Lutjanus bohar,3095,
+langsura,NA,Black-banded snapper,Lutjanidae,Lutjanus decussatus,3092,
+bangarau,NA,Snapper,Lutjanidae,Lutjanus semicinctus,3089,
+keapu kubah,NA,,,Epinephelus undulosus,keapu_kubah,

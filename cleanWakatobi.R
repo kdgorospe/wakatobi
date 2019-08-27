@@ -140,7 +140,7 @@ tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("smal box", "small b
 tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("box kecil", "small box", y)))
 tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("ekor", "fish", y)))
 tempdat <- as.data.frame(apply(tempdat, 2, function(y) gsub("bucket kecil", "small bucket", y)))
-tempdat$landing_no <- as.numeric(tempdat$landing_no)
+tempdat$landing_no <- as.numeric(as.character((tempdat$landing_no)))
 # Create empty column for the conversion calculation
 tempdat$landing_unit_fish <- "NA"
 # Create empty column for the conversion to kilograms (see calibration table from Melati)
@@ -160,6 +160,7 @@ tempdat$landing_unit_convert[tempdat$landing_unit == "small bucket"] <- small_bu
 tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- fish
 # Need to use length-weight conversion to calculate kg when "fish" is the landing unit
 # Then multiply landing_no by landing_unit_convert to get all landing totals in units of biomass (landing_unit_fish)
+tempdat$landing_unit_fish <- tempdat$landing_no * as.numeric(as.character(tempdat$landing_unit_convert))
 
 ### Convert landings flow units to individual fish units and check for 100% fish flow reported
 # LEARNING OPPORTUNITY for Lauren:: what is a more efficient way to make these substitutions for all relevant landings columns?
@@ -169,35 +170,35 @@ tempdat$landing_unit_convert[tempdat$landing_unit == "fish"] <- fish
 #drop <- c("landings_flow_convert")
 #tempdat <- tempdat[ , !(names(tempdat) %in% drop)]
 tempdat$landings_sold_personally_convert <- "NA"
-tempdat$landings_sold_personally_no <- as.numeric(tempdat$landings_sold_personally_no)
+tempdat$landings_sold_personally_no <- as.numeric(as.character(tempdat$landings_sold_personally_no))
 tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "basket"] <- basket
 tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "box"] <- box
 tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "bucket"] <- bucket
 tempdat$landings_sold_personally_convert[tempdat$landings_sold_personally_unit == "fish"] <- fish
 
 tempdat$landings_sold_Papalele_convert <- "NA"
-tempdat$landings_sold_Papalele_no <- as.numeric(tempdat$landings_sold_Papalele_no)
+tempdat$landings_sold_Papalele_no <- as.numeric(as.character(tempdat$landings_sold_Papalele_no))
 tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "basket"] <- basket
 tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "box"] <- box
 tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "bucket"] <- bucket
 tempdat$landings_sold_Papalele_convert[tempdat$landings_sold_Papalele_unit == "fish"] <- fish
 
 tempdat$landings_sold_Pengumpul_convert <- "NA"
-tempdat$landings_sold_Pengumpul_no <- as.numeric(tempdat$landings_sold_Pengumpul_no)
+tempdat$landings_sold_Pengumpul_no <- as.numeric(as.character(tempdat$landings_sold_Pengumpul_no))
 tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "basket"] <- basket
 tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "box"] <- box
 tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "bucket"] <- bucket
 tempdat$landings_sold_Pengumpul_convert[tempdat$landings_sold_Pengumpul_unit == "fish"] <- fish
 
 tempdat$landings_eaten_convert <- "NA"
-tempdat$landings_eaten_no <- as.numeric(tempdat$landings_eaten_no)
+tempdat$landings_eaten_no <- as.numeric(as.character(tempdat$landings_eaten_no))
 tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "basket"] <- basket
 tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "box"] <- box
 tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "bucket"] <- bucket
 tempdat$landings_eaten_convert[tempdat$landings_eaten_unit == "fish"] <- fish
 
 tempdat$landings_given_convert <- "NA"
-tempdat$landings_given_no <- as.numeric(tempdat$landings_given_no)
+tempdat$landings_given_no <- as.numeric(as.character(tempdat$landings_given_no))
 tempdat$landings_given_convert[tempdat$landings_given_unit == "basket"] <- basket
 tempdat$landings_given_convert[tempdat$landings_given_unit == "box"] <- box
 tempdat$landings_given_convert[tempdat$landings_given_unit == "bucket"] <- bucket
@@ -260,11 +261,32 @@ for(i in 1:length(tempdat$Fish_name_p)){
   # else do nothing
 }
 
+
+### Clean up tempdat dataframe to remove unnecessary columns
+tempdat_1 <- tempdat %>%
+  filter(!is.na(.$new_fg)) %>% # 397 rows are missing fishing ground
+  mutate(Fish_name_p = tolower(Fish_name_p)) %>%
+  dplyr::select(date = Date, captain_name = Capt_name, trip_id, fishing_ground = new_fg, engine = Engine, crew_no, season = Season, trip_time_hours = Trip_time_hours,
+                gear_cat1, gear_cat2, landing_no, landing_unit_fish, landing_unit_convert, # did not include the fish flow information
+                depth = max_fish_depth, dominant_catch = dominant_spp1, total_revenue = gross_profit_IDR, 
+                bajau_name = Fish_name_p, size_cm = Ukuran) %>%
+  mutate(size_cm = as.numeric(as.character(size_cm)))
+
+
+
 # Need to cross reference names entered in the data with names in the fish key
-fish_id_key <- read.csv("keys/fish_id_key.csv")
+fish_id_key <- read.csv("keys/fish_id_key_2.csv")
+
 fish_id_key <- fish_id_key %>%
-  dplyr::select(bajau_name = Bajau.name, common_name = Common.name, family = Family, species = Genus_species, photo_ID = Photo.ID) %>%
-  mutate(bajau_name = tolower(bajau_name))
+  dplyr::select(bajau_name, family, species) %>%
+  mutate(bajau_name = tolower(bajau_name)) %>%
+  mutate(family = tolower(family)) %>%
+  mutate(species = tolower(species))
+
+test <- tempdat %>%
+  
+  
+  left_join(., fish_id_key, by="bajau_name")
 
 temp_fish_id_key <- tempdat %>%
   dplyr::select(bajau_name = Fish_name_p, common_name = Common_Name) %>%
