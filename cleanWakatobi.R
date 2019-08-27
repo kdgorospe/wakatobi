@@ -266,13 +266,25 @@ for(i in 1:length(tempdat$Fish_name_p)){
 tempdat_1 <- tempdat %>%
   filter(!is.na(.$new_fg)) %>% # 397 rows are missing fishing ground
   mutate(Fish_name_p = tolower(Fish_name_p)) %>%
-  dplyr::select(date = Date, captain_name = Capt_name, trip_id, fishing_ground = new_fg, engine = Engine, crew_no, season = Season, trip_time_hours = Trip_time_hours,
-                gear_cat1, gear_cat2, landing_no, landing_unit_fish, landing_unit_convert, # did not include the fish flow information
+  dplyr::select(date = Date, captain_name = Capt_name, trip_id, fishing_ground = new_fg, engine = Engine, crew_no, season = Season, 
+                trip_time_hours = Trip_time_hours, gear_cat1, gear_cat2, landing_no, landing_unit_fish, landing_unit_convert, # did not include the fish flow information
                 depth = max_fish_depth, dominant_catch = dominant_spp1, total_revenue = gross_profit_IDR, 
                 bajau_name = Fish_name_p, size_cm = Ukuran) %>%
   mutate(size_cm = as.numeric(as.character(size_cm)))
 
-
+### Need to modify fish_id_key to only include coral reef fishes
+fish_id_key <- read.csv("keys/fish_id_key.csv")
+mac_id_key <- read.csv("keys/macneil_2015_func_groups.csv")
+mac_id_key$spp <- gsub("_", " ", mac_id_key$spp)
+mac_id_key$spp <- gsub("sp\\b", "spp.", mac_id_key$spp)
+mac_id_key <- mac_id_key %>%
+  dplyr::select(species = spp, fg, habitat, included = Included) %>%
+  mutate(species = as.character(species))
+test <- fish_id_key %>%
+  mutate(species = as.character(species)) %>%
+  left_join(., mac_id_key, by="species")
+# create excel file to modify manually in excel
+write.csv(test, file="fish_id_key_2.csv")
 
 # Need to cross reference names entered in the data with names in the fish key
 fish_id_key <- read.csv("keys/fish_id_key_2.csv")
