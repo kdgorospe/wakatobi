@@ -1,6 +1,8 @@
 # Clean just the fish flow data
 
 rm(list=ls())
+library(sf)
+library(ggplot2)
 library(googledrive)
 
 # input LANDINGS TRIP data: https://drive.google.com/open?id=10C0WT0Psz00bHkw8S-NGbPU9FR7Ufgzv
@@ -250,4 +252,7 @@ sum(trip.dat$landings_sold_Pengumpul_abund!=0) # 59
 plot(trip.dat$landings_eaten_abund)
 plot(trip.dat$landings_given_abund)
 
-write.csv(trip.dat, file="Wakatobi-landings_201909124_TRIP_cleanedFishFlows.csv", quote=FALSE, row.names = FALSE)
+write.csv(trip.dat, file="Wakatobi-landings_20190912_TRIP_cleanedFishFlows.csv", quote=FALSE, row.names = FALSE)
+
+### 5 - Display data on map
+
